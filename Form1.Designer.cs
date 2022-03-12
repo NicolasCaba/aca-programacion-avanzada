@@ -31,7 +31,7 @@ namespace aca1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.datosCuentaUsuario = new System.Windows.Forms.DataGridView();
             this.numeroCuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +65,7 @@ namespace aca1
             this.label6 = new System.Windows.Forms.Label();
             this.btnNuevoUsuario = new System.Windows.Forms.Button();
             this.btnGenerarFactura = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCuentaUsuario)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -86,11 +86,11 @@ namespace aca1
             this.label1.TabIndex = 0;
             this.label1.Text = "Acueducto, Alcantarillado y Aseo Generacion de factura";
             // 
-            // dataGridView1
+            // datosCuentaUsuario
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.datosCuentaUsuario.BackgroundColor = System.Drawing.Color.White;
+            this.datosCuentaUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datosCuentaUsuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numeroCuenta,
             this.nombre,
             this.estrato,
@@ -111,12 +111,12 @@ namespace aca1
             this.disposicionFinal,
             this.tratamientoDeLixiviados,
             this.tarifaDeAprovechamiento});
-            this.dataGridView1.Location = new System.Drawing.Point(10, 225);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1883, 805);
-            this.dataGridView1.TabIndex = 1;
+            this.datosCuentaUsuario.Location = new System.Drawing.Point(10, 225);
+            this.datosCuentaUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.datosCuentaUsuario.Name = "datosCuentaUsuario";
+            this.datosCuentaUsuario.RowTemplate.Height = 25;
+            this.datosCuentaUsuario.Size = new System.Drawing.Size(1883, 805);
+            this.datosCuentaUsuario.TabIndex = 1;
             // 
             // numeroCuenta
             // 
@@ -389,7 +389,7 @@ namespace aca1
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datosCuentaUsuario);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -399,7 +399,7 @@ namespace aca1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acueducto y Aseo";
             this.Load += new System.EventHandler(this.Home_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCuentaUsuario)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -418,7 +418,7 @@ namespace aca1
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datosCuentaUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
