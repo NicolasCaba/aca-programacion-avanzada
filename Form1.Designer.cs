@@ -250,7 +250,6 @@ namespace aca1
             this.label2.Size = new System.Drawing.Size(65, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Usuario";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 
@@ -283,7 +282,6 @@ namespace aca1
             this.label3.Size = new System.Drawing.Size(96, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Acueducto";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel3
             // 
@@ -356,7 +354,6 @@ namespace aca1
             this.label6.TabIndex = 9;
             this.label6.Text = "Para generar una factura seleccione una fila de la tabla y de click en el boton \"" +
     "Generar factura\"";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // btnNuevoUsuario
             // 

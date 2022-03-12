@@ -20,27 +20,12 @@ namespace aca1
         {
             DatabaseConnection conexion = new DatabaseConnection();
             conexion.OpenConection();
-            Console.WriteLine("Holaaaaaa*******************************");
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void btnGenerarFactura_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Hllasdfasdfsadhjghjsaldgj");
+            
         }
     }
 }
