@@ -92,6 +92,16 @@ namespace aca1
             this.labelAcueductoCantidadSubtotal = new System.Windows.Forms.Label();
             this.labelAcueductoVUCargoFijo = new System.Windows.Forms.Label();
             this.labelAcueductoVUConsumoBasico = new System.Windows.Forms.Label();
+            this.labelAcueductoVUConsumoComplementario = new System.Windows.Forms.Label();
+            this.labelAcueductoVUConsumoSuntuario = new System.Windows.Forms.Label();
+            this.labelAcueductoVTCargoFijo = new System.Windows.Forms.Label();
+            this.labelAcueductoVTConsumoBasico = new System.Windows.Forms.Label();
+            this.labelAcueductoVTConsumoComplementario = new System.Windows.Forms.Label();
+            this.labelAcueductoVTConsumoSuntuario = new System.Windows.Forms.Label();
+            this.labelAcueductoSCCargoFijo = new System.Windows.Forms.Label();
+            this.labelAcueductoSCConsumoBasico = new System.Windows.Forms.Label();
+            this.labelAcueductoSCConsumoComplementario = new System.Windows.Forms.Label();
+            this.labelAcueductoSCConsumoSuntuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -568,6 +578,10 @@ namespace aca1
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.labelAcueductoSCConsumoSuntuario);
+            this.panel8.Controls.Add(this.labelAcueductoSCConsumoComplementario);
+            this.panel8.Controls.Add(this.labelAcueductoSCConsumoBasico);
+            this.panel8.Controls.Add(this.labelAcueductoSCCargoFijo);
             this.panel8.Controls.Add(this.panel15);
             this.panel8.Controls.Add(this.panel16);
             this.panel8.Controls.Add(this.panel10);
@@ -587,6 +601,10 @@ namespace aca1
             // panel16
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.labelAcueductoVTConsumoSuntuario);
+            this.panel16.Controls.Add(this.labelAcueductoVTConsumoComplementario);
+            this.panel16.Controls.Add(this.labelAcueductoVTConsumoBasico);
+            this.panel16.Controls.Add(this.labelAcueductoVTCargoFijo);
             this.panel16.Controls.Add(this.panel18);
             this.panel16.Location = new System.Drawing.Point(71, -2);
             this.panel16.Name = "panel16";
@@ -596,6 +614,8 @@ namespace aca1
             // panel18
             // 
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel18.Controls.Add(this.labelAcueductoVUConsumoSuntuario);
+            this.panel18.Controls.Add(this.labelAcueductoVUConsumoComplementario);
             this.panel18.Controls.Add(this.labelAcueductoVUConsumoBasico);
             this.panel18.Controls.Add(this.labelAcueductoVUCargoFijo);
             this.panel18.Location = new System.Drawing.Point(-1, 0);
@@ -768,6 +788,106 @@ namespace aca1
             this.labelAcueductoVUConsumoBasico.TabIndex = 12;
             this.labelAcueductoVUConsumoBasico.Text = "0";
             // 
+            // labelAcueductoVUConsumoComplementario
+            // 
+            this.labelAcueductoVUConsumoComplementario.AutoSize = true;
+            this.labelAcueductoVUConsumoComplementario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoVUConsumoComplementario.Location = new System.Drawing.Point(6, 73);
+            this.labelAcueductoVUConsumoComplementario.Name = "labelAcueductoVUConsumoComplementario";
+            this.labelAcueductoVUConsumoComplementario.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoVUConsumoComplementario.TabIndex = 13;
+            this.labelAcueductoVUConsumoComplementario.Text = "0";
+            // 
+            // labelAcueductoVUConsumoSuntuario
+            // 
+            this.labelAcueductoVUConsumoSuntuario.AutoSize = true;
+            this.labelAcueductoVUConsumoSuntuario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoVUConsumoSuntuario.Location = new System.Drawing.Point(6, 107);
+            this.labelAcueductoVUConsumoSuntuario.Name = "labelAcueductoVUConsumoSuntuario";
+            this.labelAcueductoVUConsumoSuntuario.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoVUConsumoSuntuario.TabIndex = 14;
+            this.labelAcueductoVUConsumoSuntuario.Text = "0";
+            // 
+            // labelAcueductoVTCargoFijo
+            // 
+            this.labelAcueductoVTCargoFijo.AutoSize = true;
+            this.labelAcueductoVTCargoFijo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoVTCargoFijo.Location = new System.Drawing.Point(100, 12);
+            this.labelAcueductoVTCargoFijo.Name = "labelAcueductoVTCargoFijo";
+            this.labelAcueductoVTCargoFijo.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoVTCargoFijo.TabIndex = 12;
+            this.labelAcueductoVTCargoFijo.Text = "0";
+            // 
+            // labelAcueductoVTConsumoBasico
+            // 
+            this.labelAcueductoVTConsumoBasico.AutoSize = true;
+            this.labelAcueductoVTConsumoBasico.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoVTConsumoBasico.Location = new System.Drawing.Point(100, 41);
+            this.labelAcueductoVTConsumoBasico.Name = "labelAcueductoVTConsumoBasico";
+            this.labelAcueductoVTConsumoBasico.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoVTConsumoBasico.TabIndex = 13;
+            this.labelAcueductoVTConsumoBasico.Text = "0";
+            // 
+            // labelAcueductoVTConsumoComplementario
+            // 
+            this.labelAcueductoVTConsumoComplementario.AutoSize = true;
+            this.labelAcueductoVTConsumoComplementario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoVTConsumoComplementario.Location = new System.Drawing.Point(100, 74);
+            this.labelAcueductoVTConsumoComplementario.Name = "labelAcueductoVTConsumoComplementario";
+            this.labelAcueductoVTConsumoComplementario.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoVTConsumoComplementario.TabIndex = 14;
+            this.labelAcueductoVTConsumoComplementario.Text = "0";
+            // 
+            // labelAcueductoVTConsumoSuntuario
+            // 
+            this.labelAcueductoVTConsumoSuntuario.AutoSize = true;
+            this.labelAcueductoVTConsumoSuntuario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoVTConsumoSuntuario.Location = new System.Drawing.Point(100, 108);
+            this.labelAcueductoVTConsumoSuntuario.Name = "labelAcueductoVTConsumoSuntuario";
+            this.labelAcueductoVTConsumoSuntuario.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoVTConsumoSuntuario.TabIndex = 15;
+            this.labelAcueductoVTConsumoSuntuario.Text = "0";
+            // 
+            // labelAcueductoSCCargoFijo
+            // 
+            this.labelAcueductoSCCargoFijo.AutoSize = true;
+            this.labelAcueductoSCCargoFijo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoSCCargoFijo.Location = new System.Drawing.Point(268, 11);
+            this.labelAcueductoSCCargoFijo.Name = "labelAcueductoSCCargoFijo";
+            this.labelAcueductoSCCargoFijo.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoSCCargoFijo.TabIndex = 13;
+            this.labelAcueductoSCCargoFijo.Text = "0";
+            // 
+            // labelAcueductoSCConsumoBasico
+            // 
+            this.labelAcueductoSCConsumoBasico.AutoSize = true;
+            this.labelAcueductoSCConsumoBasico.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoSCConsumoBasico.Location = new System.Drawing.Point(268, 40);
+            this.labelAcueductoSCConsumoBasico.Name = "labelAcueductoSCConsumoBasico";
+            this.labelAcueductoSCConsumoBasico.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoSCConsumoBasico.TabIndex = 14;
+            this.labelAcueductoSCConsumoBasico.Text = "0";
+            // 
+            // labelAcueductoSCConsumoComplementario
+            // 
+            this.labelAcueductoSCConsumoComplementario.AutoSize = true;
+            this.labelAcueductoSCConsumoComplementario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoSCConsumoComplementario.Location = new System.Drawing.Point(268, 73);
+            this.labelAcueductoSCConsumoComplementario.Name = "labelAcueductoSCConsumoComplementario";
+            this.labelAcueductoSCConsumoComplementario.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoSCConsumoComplementario.TabIndex = 15;
+            this.labelAcueductoSCConsumoComplementario.Text = "0";
+            // 
+            // labelAcueductoSCConsumoSuntuario
+            // 
+            this.labelAcueductoSCConsumoSuntuario.AutoSize = true;
+            this.labelAcueductoSCConsumoSuntuario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAcueductoSCConsumoSuntuario.Location = new System.Drawing.Point(268, 107);
+            this.labelAcueductoSCConsumoSuntuario.Name = "labelAcueductoSCConsumoSuntuario";
+            this.labelAcueductoSCConsumoSuntuario.Size = new System.Drawing.Size(15, 17);
+            this.labelAcueductoSCConsumoSuntuario.TabIndex = 16;
+            this.labelAcueductoSCConsumoSuntuario.Text = "0";
+            // 
             // FormFactura
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -811,7 +931,9 @@ namespace aca1
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -884,5 +1006,15 @@ namespace aca1
         private System.Windows.Forms.Label labelAcueductoCantidadSubtotal;
         private System.Windows.Forms.Label labelAcueductoCantidadConsumoSuntuario;
         private System.Windows.Forms.Label labelAcueductoCantidadConsumoComplementario;
+        private System.Windows.Forms.Label labelAcueductoSCConsumoSuntuario;
+        private System.Windows.Forms.Label labelAcueductoSCConsumoComplementario;
+        private System.Windows.Forms.Label labelAcueductoSCConsumoBasico;
+        private System.Windows.Forms.Label labelAcueductoSCCargoFijo;
+        private System.Windows.Forms.Label labelAcueductoVTConsumoSuntuario;
+        private System.Windows.Forms.Label labelAcueductoVTConsumoComplementario;
+        private System.Windows.Forms.Label labelAcueductoVTConsumoBasico;
+        private System.Windows.Forms.Label labelAcueductoVTCargoFijo;
+        private System.Windows.Forms.Label labelAcueductoVUConsumoSuntuario;
+        private System.Windows.Forms.Label labelAcueductoVUConsumoComplementario;
     }
 }
