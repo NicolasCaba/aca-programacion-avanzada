@@ -12,14 +12,21 @@ namespace aca1
 {
     public partial class FormFactura : Form
     {
-        public FormFactura()
+        int idFactura;
+        public FormFactura(int idFactura)
         {
             InitializeComponent();
+            this.idFactura = idFactura;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormFactura_Load(object sender, EventArgs e)
+        {
+            label1.Text = Convert.ToString(this.idFactura);
         }
     }
 }

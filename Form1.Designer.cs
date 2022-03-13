@@ -32,11 +32,6 @@ namespace aca1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.label1 = new System.Windows.Forms.Label();
             this.datosCuentaUsuario = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnNuevoUsuario = new System.Windows.Forms.Button();
-            this.btnGenerarFactura = new System.Windows.Forms.Button();
             this.numeroCuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +53,12 @@ namespace aca1
             this.disposicionFinal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tratamientoDeLixiviados = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tarifaDeAprovechamiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnNuevoUsuario = new System.Windows.Forms.Button();
+            this.btnGenerarFactura = new System.Windows.Forms.Button();
+            this.labelNumeroCuenta = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.datosCuentaUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -111,54 +112,6 @@ namespace aca1
             this.datosCuentaUsuario.Size = new System.Drawing.Size(1262, 361);
             this.datosCuentaUsuario.TabIndex = 1;
             this.datosCuentaUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datosCuentaUsuario_CellContentClick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::aca1.Properties.Resources.Acueducto_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(305, 59);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::aca1.Properties.Resources.Aseo;
-            this.pictureBox2.Location = new System.Drawing.Point(1137, 24);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(135, 34);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(50, 100);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(630, 17);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Para generar una factura seleccione una fila de la tabla y de click en el boton \"" +
-    "Generar factura\"";
-            // 
-            // btnNuevoUsuario
-            // 
-            this.btnNuevoUsuario.Location = new System.Drawing.Point(162, 139);
-            this.btnNuevoUsuario.Name = "btnNuevoUsuario";
-            this.btnNuevoUsuario.Size = new System.Drawing.Size(113, 23);
-            this.btnNuevoUsuario.TabIndex = 10;
-            this.btnNuevoUsuario.Text = "Nuevo usuario";
-            this.btnNuevoUsuario.UseVisualStyleBackColor = true;
-            // 
-            // btnGenerarFactura
-            // 
-            this.btnGenerarFactura.Location = new System.Drawing.Point(352, 139);
-            this.btnGenerarFactura.Name = "btnGenerarFactura";
-            this.btnGenerarFactura.Size = new System.Drawing.Size(128, 23);
-            this.btnGenerarFactura.TabIndex = 11;
-            this.btnGenerarFactura.Text = "Generar factura";
-            this.btnGenerarFactura.UseVisualStyleBackColor = true;
-            this.btnGenerarFactura.Click += new System.EventHandler(this.btnGenerarFactura_Click);
             // 
             // numeroCuenta
             // 
@@ -307,12 +260,71 @@ namespace aca1
             this.tarifaDeAprovechamiento.ReadOnly = true;
             this.tarifaDeAprovechamiento.Width = 130;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::aca1.Properties.Resources.Acueducto_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(305, 59);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::aca1.Properties.Resources.Aseo;
+            this.pictureBox2.Location = new System.Drawing.Point(1137, 24);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(135, 34);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(50, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(630, 17);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Para generar una factura seleccione una fila de la tabla y de click en el boton \"" +
+    "Generar factura\"";
+            // 
+            // btnNuevoUsuario
+            // 
+            this.btnNuevoUsuario.Location = new System.Drawing.Point(162, 139);
+            this.btnNuevoUsuario.Name = "btnNuevoUsuario";
+            this.btnNuevoUsuario.Size = new System.Drawing.Size(113, 23);
+            this.btnNuevoUsuario.TabIndex = 10;
+            this.btnNuevoUsuario.Text = "Nuevo usuario";
+            this.btnNuevoUsuario.UseVisualStyleBackColor = true;
+            // 
+            // btnGenerarFactura
+            // 
+            this.btnGenerarFactura.Location = new System.Drawing.Point(352, 139);
+            this.btnGenerarFactura.Name = "btnGenerarFactura";
+            this.btnGenerarFactura.Size = new System.Drawing.Size(128, 23);
+            this.btnGenerarFactura.TabIndex = 11;
+            this.btnGenerarFactura.Text = "Generar factura";
+            this.btnGenerarFactura.UseVisualStyleBackColor = true;
+            this.btnGenerarFactura.Click += new System.EventHandler(this.btnGenerarFactura_Click);
+            // 
+            // labelNumeroCuenta
+            // 
+            this.labelNumeroCuenta.AutoSize = true;
+            this.labelNumeroCuenta.ForeColor = System.Drawing.Color.Red;
+            this.labelNumeroCuenta.Location = new System.Drawing.Point(50, 169);
+            this.labelNumeroCuenta.Name = "labelNumeroCuenta";
+            this.labelNumeroCuenta.Size = new System.Drawing.Size(230, 17);
+            this.labelNumeroCuenta.TabIndex = 12;
+            this.labelNumeroCuenta.Text = "Número de cuenta seleccionada: ";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1284, 561);
+            this.Controls.Add(this.labelNumeroCuenta);
             this.Controls.Add(this.btnGenerarFactura);
             this.Controls.Add(this.btnNuevoUsuario);
             this.Controls.Add(this.label6);
@@ -366,6 +378,7 @@ namespace aca1
         private System.Windows.Forms.DataGridViewTextBoxColumn disposicionFinal;
         private System.Windows.Forms.DataGridViewTextBoxColumn tratamientoDeLixiviados;
         private System.Windows.Forms.DataGridViewTextBoxColumn tarifaDeAprovechamiento;
+        private System.Windows.Forms.Label labelNumeroCuenta;
     }
 }
 
