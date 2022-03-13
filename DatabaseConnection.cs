@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace aca1
 {
@@ -70,6 +71,15 @@ namespace aca1
             }
 
             
+        }
+
+        public object ShowDataInGridView(string Query_)
+        {
+            SqlDataAdapter dr = new SqlDataAdapter(Query_, ConnectionString);
+            DataSet ds = new DataSet();
+            dr.Fill(ds);
+            object dataum = ds.Tables[0];
+            return dataum;
         }
     }
 }
