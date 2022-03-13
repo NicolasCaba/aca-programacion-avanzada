@@ -238,6 +238,11 @@ namespace aca1
             this.label78 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelAseoCantidadSubtotal = new System.Windows.Forms.Label();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.labelPorcentajeSubsidio = new System.Windows.Forms.Label();
+            this.labelPorcentajeContribucion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -282,6 +287,7 @@ namespace aca1
             this.panel47.SuspendLayout();
             this.panel48.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel49.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnVolver
@@ -2493,11 +2499,61 @@ namespace aca1
             this.labelAseoCantidadSubtotal.TabIndex = 28;
             this.labelAseoCantidadSubtotal.Text = "0";
             // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.labelPorcentajeContribucion);
+            this.panel49.Controls.Add(this.labelPorcentajeSubsidio);
+            this.panel49.Controls.Add(this.label44);
+            this.panel49.Controls.Add(this.label43);
+            this.panel49.Location = new System.Drawing.Point(672, 609);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(660, 54);
+            this.panel49.TabIndex = 10;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(11, 16);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(197, 23);
+            this.label43.TabIndex = 0;
+            this.label43.Text = "Porcentaje Subsidio:";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(318, 16);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(239, 23);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Porcentaje Contribucion:";
+            // 
+            // labelPorcentajeSubsidio
+            // 
+            this.labelPorcentajeSubsidio.AutoSize = true;
+            this.labelPorcentajeSubsidio.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPorcentajeSubsidio.Location = new System.Drawing.Point(214, 17);
+            this.labelPorcentajeSubsidio.Name = "labelPorcentajeSubsidio";
+            this.labelPorcentajeSubsidio.Size = new System.Drawing.Size(36, 22);
+            this.labelPorcentajeSubsidio.TabIndex = 2;
+            this.labelPorcentajeSubsidio.Text = "0%";
+            // 
+            // labelPorcentajeContribucion
+            // 
+            this.labelPorcentajeContribucion.AutoSize = true;
+            this.labelPorcentajeContribucion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPorcentajeContribucion.Location = new System.Drawing.Point(563, 16);
+            this.labelPorcentajeContribucion.Name = "labelPorcentajeContribucion";
+            this.labelPorcentajeContribucion.Size = new System.Drawing.Size(36, 22);
+            this.labelPorcentajeContribucion.TabIndex = 3;
+            this.labelPorcentajeContribucion.Text = "0%";
+            // 
             // FormFactura
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1344, 729);
+            this.Controls.Add(this.panel49);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel34);
             this.Controls.Add(this.panel19);
@@ -2599,6 +2655,8 @@ namespace aca1
             this.panel48.ResumeLayout(false);
             this.panel48.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel49.ResumeLayout(false);
+            this.panel49.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2813,5 +2871,10 @@ namespace aca1
         private System.Windows.Forms.Label labelAseoCantidadTratamientoLixiviados;
         private System.Windows.Forms.Label labelAseoCantidadDisposicionFinal;
         private System.Windows.Forms.Label labelAseoCantidadSubtotal;
+        private System.Windows.Forms.Panel panel49;
+        private System.Windows.Forms.Label labelPorcentajeContribucion;
+        private System.Windows.Forms.Label labelPorcentajeSubsidio;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
     }
 }
