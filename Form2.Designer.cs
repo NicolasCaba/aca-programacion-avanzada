@@ -221,6 +221,7 @@ namespace aca1
             this.labelAseoVUBarridoYLimpieza = new System.Windows.Forms.Label();
             this.labelAseoVUToneladasPorSuscriptor = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
+            this.labelAseoCantidadSubtotal = new System.Windows.Forms.Label();
             this.labelAseoCantidadAprovechamiento = new System.Windows.Forms.Label();
             this.labelAseoCantidadTratamientoLixiviados = new System.Windows.Forms.Label();
             this.labelAseoCantidadDisposicionFinal = new System.Windows.Forms.Label();
@@ -237,12 +238,12 @@ namespace aca1
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelAseoCantidadSubtotal = new System.Windows.Forms.Label();
             this.panel49 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.labelPorcentajeSubsidio = new System.Windows.Forms.Label();
             this.labelPorcentajeContribucion = new System.Windows.Forms.Label();
+            this.labelPorcentajeSubsidio = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -2328,6 +2329,16 @@ namespace aca1
             this.panel48.Size = new System.Drawing.Size(73, 307);
             this.panel48.TabIndex = 0;
             // 
+            // labelAseoCantidadSubtotal
+            // 
+            this.labelAseoCantidadSubtotal.AutoSize = true;
+            this.labelAseoCantidadSubtotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadSubtotal.Location = new System.Drawing.Point(21, 273);
+            this.labelAseoCantidadSubtotal.Name = "labelAseoCantidadSubtotal";
+            this.labelAseoCantidadSubtotal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadSubtotal.TabIndex = 28;
+            this.labelAseoCantidadSubtotal.Text = "0";
+            // 
             // labelAseoCantidadAprovechamiento
             // 
             this.labelAseoCantidadAprovechamiento.AutoSize = true;
@@ -2489,16 +2500,6 @@ namespace aca1
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // labelAseoCantidadSubtotal
-            // 
-            this.labelAseoCantidadSubtotal.AutoSize = true;
-            this.labelAseoCantidadSubtotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAseoCantidadSubtotal.Location = new System.Drawing.Point(21, 273);
-            this.labelAseoCantidadSubtotal.Name = "labelAseoCantidadSubtotal";
-            this.labelAseoCantidadSubtotal.Size = new System.Drawing.Size(15, 17);
-            this.labelAseoCantidadSubtotal.TabIndex = 28;
-            this.labelAseoCantidadSubtotal.Text = "0";
-            // 
             // panel49
             // 
             this.panel49.Controls.Add(this.labelPorcentajeContribucion);
@@ -2510,23 +2511,15 @@ namespace aca1
             this.panel49.Size = new System.Drawing.Size(660, 54);
             this.panel49.TabIndex = 10;
             // 
-            // label43
+            // labelPorcentajeContribucion
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(11, 16);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(197, 23);
-            this.label43.TabIndex = 0;
-            this.label43.Text = "Porcentaje Subsidio:";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(318, 16);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(239, 23);
-            this.label44.TabIndex = 1;
-            this.label44.Text = "Porcentaje Contribucion:";
+            this.labelPorcentajeContribucion.AutoSize = true;
+            this.labelPorcentajeContribucion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPorcentajeContribucion.Location = new System.Drawing.Point(563, 16);
+            this.labelPorcentajeContribucion.Name = "labelPorcentajeContribucion";
+            this.labelPorcentajeContribucion.Size = new System.Drawing.Size(36, 22);
+            this.labelPorcentajeContribucion.TabIndex = 3;
+            this.labelPorcentajeContribucion.Text = "0%";
             // 
             // labelPorcentajeSubsidio
             // 
@@ -2538,21 +2531,42 @@ namespace aca1
             this.labelPorcentajeSubsidio.TabIndex = 2;
             this.labelPorcentajeSubsidio.Text = "0%";
             // 
-            // labelPorcentajeContribucion
+            // label44
             // 
-            this.labelPorcentajeContribucion.AutoSize = true;
-            this.labelPorcentajeContribucion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPorcentajeContribucion.Location = new System.Drawing.Point(563, 16);
-            this.labelPorcentajeContribucion.Name = "labelPorcentajeContribucion";
-            this.labelPorcentajeContribucion.Size = new System.Drawing.Size(36, 22);
-            this.labelPorcentajeContribucion.TabIndex = 3;
-            this.labelPorcentajeContribucion.Text = "0%";
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(318, 16);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(239, 23);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Porcentaje Contribucion:";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(11, 16);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(197, 23);
+            this.label43.TabIndex = 0;
+            this.label43.Text = "Porcentaje Subsidio:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.button1.Location = new System.Drawing.Point(746, 677);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 40);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Generar PDF";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // FormFactura
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1344, 729);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel49);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel34);
@@ -2876,5 +2890,6 @@ namespace aca1
         private System.Windows.Forms.Label labelPorcentajeSubsidio;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Button button1;
     }
 }
