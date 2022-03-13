@@ -32,6 +32,11 @@ namespace aca1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.label1 = new System.Windows.Forms.Label();
             this.datosCuentaUsuario = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnNuevoUsuario = new System.Windows.Forms.Button();
+            this.btnGenerarFactura = new System.Windows.Forms.Button();
             this.numeroCuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,16 +52,12 @@ namespace aca1
             this.consumoSuntuarioAlcantarillado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toneladasPorSuscriptor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barridoYLimpieza = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.limpiezaUrbana = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comercializacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.recoleccionYTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.disposicionFinal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tratamientoDeLixiviados = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tarifaDeAprovechamiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnNuevoUsuario = new System.Windows.Forms.Button();
-            this.btnGenerarFactura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datosCuentaUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -94,6 +95,7 @@ namespace aca1
             this.consumoSuntuarioAlcantarillado,
             this.toneladasPorSuscriptor,
             this.barridoYLimpieza,
+            this.limpiezaUrbana,
             this.comercializacion,
             this.recoleccionYTransporte,
             this.disposicionFinal,
@@ -102,131 +104,13 @@ namespace aca1
             this.datosCuentaUsuario.Location = new System.Drawing.Point(10, 189);
             this.datosCuentaUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.datosCuentaUsuario.Name = "datosCuentaUsuario";
+            this.datosCuentaUsuario.ReadOnly = true;
+            this.datosCuentaUsuario.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.datosCuentaUsuario.RowTemplate.Height = 25;
+            this.datosCuentaUsuario.ShowEditingIcon = false;
             this.datosCuentaUsuario.Size = new System.Drawing.Size(1262, 361);
             this.datosCuentaUsuario.TabIndex = 1;
             this.datosCuentaUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datosCuentaUsuario_CellContentClick);
-            // 
-            // numeroCuenta
-            // 
-            this.numeroCuenta.HeaderText = "# Cuenta";
-            this.numeroCuenta.Name = "numeroCuenta";
-            this.numeroCuenta.Width = 60;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.Width = 112;
-            // 
-            // estrato
-            // 
-            this.estrato.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.estrato.HeaderText = "Estrato";
-            this.estrato.Name = "estrato";
-            this.estrato.Width = 55;
-            // 
-            // uso
-            // 
-            this.uso.HeaderText = "Uso";
-            this.uso.Name = "uso";
-            this.uso.Width = 70;
-            // 
-            // direccion
-            // 
-            this.direccion.HeaderText = "Dirección";
-            this.direccion.Name = "direccion";
-            this.direccion.Width = 118;
-            // 
-            // cargoFijoAcueducto
-            // 
-            this.cargoFijoAcueducto.HeaderText = "Cargo Fijo Acueducto";
-            this.cargoFijoAcueducto.Name = "cargoFijoAcueducto";
-            this.cargoFijoAcueducto.Width = 80;
-            // 
-            // consumoBasicoAcueducto
-            // 
-            this.consumoBasicoAcueducto.HeaderText = "Consumo Basico Acueducto";
-            this.consumoBasicoAcueducto.Name = "consumoBasicoAcueducto";
-            this.consumoBasicoAcueducto.Width = 80;
-            // 
-            // consumoComplementarioAcueducto
-            // 
-            this.consumoComplementarioAcueducto.HeaderText = "Consumo Complementario Acueducto";
-            this.consumoComplementarioAcueducto.Name = "consumoComplementarioAcueducto";
-            this.consumoComplementarioAcueducto.Width = 125;
-            // 
-            // consumoSuntuarioAcueducto
-            // 
-            this.consumoSuntuarioAcueducto.HeaderText = "Consumo Suntuario Acueducto";
-            this.consumoSuntuarioAcueducto.Name = "consumoSuntuarioAcueducto";
-            this.consumoSuntuarioAcueducto.Width = 80;
-            // 
-            // cargoFijoAlcantarillado
-            // 
-            this.cargoFijoAlcantarillado.HeaderText = "Cargo Fijo Alcantarillado";
-            this.cargoFijoAlcantarillado.Name = "cargoFijoAlcantarillado";
-            this.cargoFijoAlcantarillado.Width = 80;
-            // 
-            // consumoBasicoAlcantarillado
-            // 
-            this.consumoBasicoAlcantarillado.HeaderText = "Consumo Basico Alcantarillado";
-            this.consumoBasicoAlcantarillado.Name = "consumoBasicoAlcantarillado";
-            this.consumoBasicoAlcantarillado.Width = 80;
-            // 
-            // consumoComplementarioAlcantarillado
-            // 
-            this.consumoComplementarioAlcantarillado.HeaderText = "Consumo Complementario Alcantarillado";
-            this.consumoComplementarioAlcantarillado.Name = "consumoComplementarioAlcantarillado";
-            this.consumoComplementarioAlcantarillado.Width = 125;
-            // 
-            // consumoSuntuarioAlcantarillado
-            // 
-            this.consumoSuntuarioAlcantarillado.HeaderText = "Consumo Suntuario Alcantarillado";
-            this.consumoSuntuarioAlcantarillado.Name = "consumoSuntuarioAlcantarillado";
-            this.consumoSuntuarioAlcantarillado.Width = 80;
-            // 
-            // toneladasPorSuscriptor
-            // 
-            this.toneladasPorSuscriptor.HeaderText = "Toneladas Por Suscriptor Aseo";
-            this.toneladasPorSuscriptor.Name = "toneladasPorSuscriptor";
-            this.toneladasPorSuscriptor.Width = 80;
-            // 
-            // barridoYLimpieza
-            // 
-            this.barridoYLimpieza.HeaderText = "Barrido y Limpieza Aseo";
-            this.barridoYLimpieza.Name = "barridoYLimpieza";
-            this.barridoYLimpieza.Width = 70;
-            // 
-            // comercializacion
-            // 
-            this.comercializacion.HeaderText = "Comercialización Aseo";
-            this.comercializacion.Name = "comercializacion";
-            this.comercializacion.Width = 125;
-            // 
-            // recoleccionYTransporte
-            // 
-            this.recoleccionYTransporte.HeaderText = "Recoleccion y Transporte Aseo";
-            this.recoleccionYTransporte.Name = "recoleccionYTransporte";
-            this.recoleccionYTransporte.Width = 98;
-            // 
-            // disposicionFinal
-            // 
-            this.disposicionFinal.HeaderText = "Disposicion Final Aseo";
-            this.disposicionFinal.Name = "disposicionFinal";
-            this.disposicionFinal.Width = 98;
-            // 
-            // tratamientoDeLixiviados
-            // 
-            this.tratamientoDeLixiviados.HeaderText = "Tratamiento de Lixiviados Aseo";
-            this.tratamientoDeLixiviados.Name = "tratamientoDeLixiviados";
-            this.tratamientoDeLixiviados.Width = 98;
-            // 
-            // tarifaDeAprovechamiento
-            // 
-            this.tarifaDeAprovechamiento.HeaderText = "Tarifa de Aprovechamiento Aseo";
-            this.tarifaDeAprovechamiento.Name = "tarifaDeAprovechamiento";
-            this.tarifaDeAprovechamiento.Width = 130;
             // 
             // pictureBox1
             // 
@@ -275,6 +159,153 @@ namespace aca1
             this.btnGenerarFactura.Text = "Generar factura";
             this.btnGenerarFactura.UseVisualStyleBackColor = true;
             this.btnGenerarFactura.Click += new System.EventHandler(this.btnGenerarFactura_Click);
+            // 
+            // numeroCuenta
+            // 
+            this.numeroCuenta.HeaderText = "# Cuenta";
+            this.numeroCuenta.Name = "numeroCuenta";
+            this.numeroCuenta.ReadOnly = true;
+            this.numeroCuenta.Width = 60;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Width = 112;
+            // 
+            // estrato
+            // 
+            this.estrato.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.estrato.HeaderText = "Estrato";
+            this.estrato.Name = "estrato";
+            this.estrato.ReadOnly = true;
+            this.estrato.Width = 55;
+            // 
+            // uso
+            // 
+            this.uso.HeaderText = "Uso";
+            this.uso.Name = "uso";
+            this.uso.ReadOnly = true;
+            this.uso.Width = 70;
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "Dirección";
+            this.direccion.Name = "direccion";
+            this.direccion.ReadOnly = true;
+            this.direccion.Width = 118;
+            // 
+            // cargoFijoAcueducto
+            // 
+            this.cargoFijoAcueducto.HeaderText = "Cargo Fijo Acueducto";
+            this.cargoFijoAcueducto.Name = "cargoFijoAcueducto";
+            this.cargoFijoAcueducto.ReadOnly = true;
+            this.cargoFijoAcueducto.Width = 80;
+            // 
+            // consumoBasicoAcueducto
+            // 
+            this.consumoBasicoAcueducto.HeaderText = "Consumo Basico Acueducto";
+            this.consumoBasicoAcueducto.Name = "consumoBasicoAcueducto";
+            this.consumoBasicoAcueducto.ReadOnly = true;
+            this.consumoBasicoAcueducto.Width = 80;
+            // 
+            // consumoComplementarioAcueducto
+            // 
+            this.consumoComplementarioAcueducto.HeaderText = "Consumo Complementario Acueducto";
+            this.consumoComplementarioAcueducto.Name = "consumoComplementarioAcueducto";
+            this.consumoComplementarioAcueducto.ReadOnly = true;
+            this.consumoComplementarioAcueducto.Width = 125;
+            // 
+            // consumoSuntuarioAcueducto
+            // 
+            this.consumoSuntuarioAcueducto.HeaderText = "Consumo Suntuario Acueducto";
+            this.consumoSuntuarioAcueducto.Name = "consumoSuntuarioAcueducto";
+            this.consumoSuntuarioAcueducto.ReadOnly = true;
+            this.consumoSuntuarioAcueducto.Width = 80;
+            // 
+            // cargoFijoAlcantarillado
+            // 
+            this.cargoFijoAlcantarillado.HeaderText = "Cargo Fijo Alcantarillado";
+            this.cargoFijoAlcantarillado.Name = "cargoFijoAlcantarillado";
+            this.cargoFijoAlcantarillado.ReadOnly = true;
+            this.cargoFijoAlcantarillado.Width = 80;
+            // 
+            // consumoBasicoAlcantarillado
+            // 
+            this.consumoBasicoAlcantarillado.HeaderText = "Consumo Basico Alcantarillado";
+            this.consumoBasicoAlcantarillado.Name = "consumoBasicoAlcantarillado";
+            this.consumoBasicoAlcantarillado.ReadOnly = true;
+            this.consumoBasicoAlcantarillado.Width = 80;
+            // 
+            // consumoComplementarioAlcantarillado
+            // 
+            this.consumoComplementarioAlcantarillado.HeaderText = "Consumo Complementario Alcantarillado";
+            this.consumoComplementarioAlcantarillado.Name = "consumoComplementarioAlcantarillado";
+            this.consumoComplementarioAlcantarillado.ReadOnly = true;
+            this.consumoComplementarioAlcantarillado.Width = 125;
+            // 
+            // consumoSuntuarioAlcantarillado
+            // 
+            this.consumoSuntuarioAlcantarillado.HeaderText = "Consumo Suntuario Alcantarillado";
+            this.consumoSuntuarioAlcantarillado.Name = "consumoSuntuarioAlcantarillado";
+            this.consumoSuntuarioAlcantarillado.ReadOnly = true;
+            this.consumoSuntuarioAlcantarillado.Width = 80;
+            // 
+            // toneladasPorSuscriptor
+            // 
+            this.toneladasPorSuscriptor.HeaderText = "Toneladas Por Suscriptor Aseo";
+            this.toneladasPorSuscriptor.Name = "toneladasPorSuscriptor";
+            this.toneladasPorSuscriptor.ReadOnly = true;
+            this.toneladasPorSuscriptor.Width = 80;
+            // 
+            // barridoYLimpieza
+            // 
+            this.barridoYLimpieza.HeaderText = "Barrido y Limpieza Aseo";
+            this.barridoYLimpieza.Name = "barridoYLimpieza";
+            this.barridoYLimpieza.ReadOnly = true;
+            this.barridoYLimpieza.Width = 70;
+            // 
+            // limpiezaUrbana
+            // 
+            this.limpiezaUrbana.HeaderText = "Limpieza Urbana Aseo";
+            this.limpiezaUrbana.Name = "limpiezaUrbana";
+            this.limpiezaUrbana.ReadOnly = true;
+            // 
+            // comercializacion
+            // 
+            this.comercializacion.HeaderText = "Comercialización Aseo";
+            this.comercializacion.Name = "comercializacion";
+            this.comercializacion.ReadOnly = true;
+            this.comercializacion.Width = 125;
+            // 
+            // recoleccionYTransporte
+            // 
+            this.recoleccionYTransporte.HeaderText = "Recoleccion y Transporte Aseo";
+            this.recoleccionYTransporte.Name = "recoleccionYTransporte";
+            this.recoleccionYTransporte.ReadOnly = true;
+            this.recoleccionYTransporte.Width = 98;
+            // 
+            // disposicionFinal
+            // 
+            this.disposicionFinal.HeaderText = "Disposicion Final Aseo";
+            this.disposicionFinal.Name = "disposicionFinal";
+            this.disposicionFinal.ReadOnly = true;
+            this.disposicionFinal.Width = 98;
+            // 
+            // tratamientoDeLixiviados
+            // 
+            this.tratamientoDeLixiviados.HeaderText = "Tratamiento de Lixiviados Aseo";
+            this.tratamientoDeLixiviados.Name = "tratamientoDeLixiviados";
+            this.tratamientoDeLixiviados.ReadOnly = true;
+            this.tratamientoDeLixiviados.Width = 98;
+            // 
+            // tarifaDeAprovechamiento
+            // 
+            this.tarifaDeAprovechamiento.HeaderText = "Tarifa de Aprovechamiento Aseo";
+            this.tarifaDeAprovechamiento.Name = "tarifaDeAprovechamiento";
+            this.tarifaDeAprovechamiento.ReadOnly = true;
+            this.tarifaDeAprovechamiento.Width = 130;
             // 
             // Home
             // 
@@ -329,6 +360,7 @@ namespace aca1
         private System.Windows.Forms.DataGridViewTextBoxColumn consumoSuntuarioAlcantarillado;
         private System.Windows.Forms.DataGridViewTextBoxColumn toneladasPorSuscriptor;
         private System.Windows.Forms.DataGridViewTextBoxColumn barridoYLimpieza;
+        private System.Windows.Forms.DataGridViewTextBoxColumn limpiezaUrbana;
         private System.Windows.Forms.DataGridViewTextBoxColumn comercializacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn recoleccionYTransporte;
         private System.Windows.Forms.DataGridViewTextBoxColumn disposicionFinal;

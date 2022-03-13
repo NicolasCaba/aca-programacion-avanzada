@@ -112,13 +112,13 @@ namespace aca1
                 datosCuentaUsuario.Rows[row].Cells[11].Value = dr["Consumo_complementario_Alcantarillado"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[12].Value = dr["Consumo_suntuario_Alcantarillado"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[13].Value = dr["Toneladas_por_suscriptor"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[15].Value = dr["Barrido_y_limpieza"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[16].Value = dr["Limpieza_urbana"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[17].Value = dr["Comercializacion"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[18].Value = dr["Recoleccion_y_transporte"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[19].Value = dr["Disposicion_final"].ToString();
+                datosCuentaUsuario.Rows[row].Cells[14].Value = dr["Barrido_y_limpieza"].ToString();
+                datosCuentaUsuario.Rows[row].Cells[15].Value = dr["Limpieza_urbana"].ToString();
+                datosCuentaUsuario.Rows[row].Cells[16].Value = dr["Comercializacion"].ToString();
+                datosCuentaUsuario.Rows[row].Cells[17].Value = dr["Recoleccion_y_transporte"].ToString();
+                datosCuentaUsuario.Rows[row].Cells[18].Value = dr["Disposicion_final"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[19].Value = dr["Tratamiento_lixiviados"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[19].Value = dr["Aprovechamiento"].ToString();
+                datosCuentaUsuario.Rows[row].Cells[20].Value = dr["Aprovechamiento"].ToString();
         
             }
 
