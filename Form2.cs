@@ -26,7 +26,8 @@ namespace aca1
 
         private void FormFactura_Load(object sender, EventArgs e)
         {
-            label1.Text = Convert.ToString(this.idFactura);
+            labelIdFactura.Text = Convert.ToString(this.idFactura);
         }
+
     }
 }
