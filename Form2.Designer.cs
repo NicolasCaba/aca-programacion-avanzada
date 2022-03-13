@@ -178,34 +178,57 @@ namespace aca1
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
+            this.labelAseoTotalSubtotal = new System.Windows.Forms.Label();
+            this.labelAseoTotalAprovechamiento = new System.Windows.Forms.Label();
+            this.labelAseoTotalTratamientoLixiviados = new System.Windows.Forms.Label();
+            this.labelAseoTotalDisposicionFinal = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.labelAseoTotalRecoleccionYTransporte = new System.Windows.Forms.Label();
+            this.labelAseoTotalComercializacion = new System.Windows.Forms.Label();
+            this.labelAseoTotalLimpiezaUrbana = new System.Windows.Forms.Label();
+            this.labelAseoTotalBarridoYLimpieza = new System.Windows.Forms.Label();
+            this.labelAseoTotalToneladasPorSuscriptor = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
+            this.labelAseoSCAprovechamiento = new System.Windows.Forms.Label();
+            this.labelAseoSCComercializacion = new System.Windows.Forms.Label();
+            this.labelAseoSCTratamientoLixiviados = new System.Windows.Forms.Label();
+            this.labelAseoSCRecoleccionYTransporte = new System.Windows.Forms.Label();
+            this.labelAseoSCDisposicionFinal = new System.Windows.Forms.Label();
+            this.labelAseoSCLimpiezaUrbana = new System.Windows.Forms.Label();
+            this.labelAseoSCBarridoYLimpieza = new System.Windows.Forms.Label();
+            this.labelAseoSCToneladasPorSuscriptor = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
             this.panel46 = new System.Windows.Forms.Panel();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
+            this.labelAseoVTAprovechamiento = new System.Windows.Forms.Label();
+            this.labelAseoVTTratamientoLixiviados = new System.Windows.Forms.Label();
+            this.labelAseoVTDisposicionFinal = new System.Windows.Forms.Label();
+            this.labelAseoVTComercializacion = new System.Windows.Forms.Label();
+            this.labelAseoVTRecoleccionYTransporte = new System.Windows.Forms.Label();
+            this.labelAseoVTLimpiezaUrbana = new System.Windows.Forms.Label();
+            this.labelAseoVTBarridoYLimpieza = new System.Windows.Forms.Label();
+            this.labelAseoVTToneladasPorSuscriptor = new System.Windows.Forms.Label();
             this.panel47 = new System.Windows.Forms.Panel();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
+            this.labelAseoVUAprovechamiento = new System.Windows.Forms.Label();
+            this.labelAseoVUTratamientoLixiviados = new System.Windows.Forms.Label();
+            this.labelAseoVUComercializacion = new System.Windows.Forms.Label();
+            this.labelAseoVURecoleccionYTransporte = new System.Windows.Forms.Label();
+            this.labelAseoVUDisposicionFinal = new System.Windows.Forms.Label();
+            this.labelAseoVULimpiezaUrbana = new System.Windows.Forms.Label();
+            this.labelAseoVUBarridoYLimpieza = new System.Windows.Forms.Label();
+            this.labelAseoVUToneladasPorSuscriptor = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.labelAseoCantidadConsumoBasico = new System.Windows.Forms.Label();
-            this.labelAseoCantidadCargoFijo = new System.Windows.Forms.Label();
+            this.labelAseoCantidadAprovechamiento = new System.Windows.Forms.Label();
+            this.labelAseoCantidadTratamientoLixiviados = new System.Windows.Forms.Label();
+            this.labelAseoCantidadDisposicionFinal = new System.Windows.Forms.Label();
+            this.labelAseoCantidadRecoleccionYTransporte = new System.Windows.Forms.Label();
+            this.labelAseoCantidadComercializacion = new System.Windows.Forms.Label();
+            this.labelAseoCantidadLimpiezaUrbana = new System.Windows.Forms.Label();
+            this.labelAseoCantidadBarridoYLimpieza = new System.Windows.Forms.Label();
+            this.labelAseoCantidadToneladasPorSuscriptor = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
@@ -214,29 +237,7 @@ namespace aca1
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
+            this.labelAseoCantidadSubtotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1673,7 +1674,7 @@ namespace aca1
             this.panel34.Controls.Add(this.label78);
             this.panel34.Location = new System.Drawing.Point(672, 188);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(660, 451);
+            this.panel34.Size = new System.Drawing.Size(660, 417);
             this.panel34.TabIndex = 8;
             // 
             // panel35
@@ -1839,19 +1840,19 @@ namespace aca1
             // panel43
             // 
             this.panel43.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel43.Controls.Add(this.label98);
-            this.panel43.Controls.Add(this.label95);
-            this.panel43.Controls.Add(this.label94);
-            this.panel43.Controls.Add(this.label93);
+            this.panel43.Controls.Add(this.labelAseoTotalSubtotal);
+            this.panel43.Controls.Add(this.labelAseoTotalAprovechamiento);
+            this.panel43.Controls.Add(this.labelAseoTotalTratamientoLixiviados);
+            this.panel43.Controls.Add(this.labelAseoTotalDisposicionFinal);
             this.panel43.Controls.Add(this.label79);
             this.panel43.Controls.Add(this.label76);
             this.panel43.Controls.Add(this.label71);
             this.panel43.Controls.Add(this.label70);
-            this.panel43.Controls.Add(this.label43);
-            this.panel43.Controls.Add(this.label44);
-            this.panel43.Controls.Add(this.label45);
-            this.panel43.Controls.Add(this.label46);
-            this.panel43.Controls.Add(this.label47);
+            this.panel43.Controls.Add(this.labelAseoTotalRecoleccionYTransporte);
+            this.panel43.Controls.Add(this.labelAseoTotalComercializacion);
+            this.panel43.Controls.Add(this.labelAseoTotalLimpiezaUrbana);
+            this.panel43.Controls.Add(this.labelAseoTotalBarridoYLimpieza);
+            this.panel43.Controls.Add(this.labelAseoTotalToneladasPorSuscriptor);
             this.panel43.Controls.Add(this.label48);
             this.panel43.Controls.Add(this.panel44);
             this.panel43.Controls.Add(this.label72);
@@ -1863,55 +1864,135 @@ namespace aca1
             this.panel43.Size = new System.Drawing.Size(650, 365);
             this.panel43.TabIndex = 6;
             // 
-            // label43
+            // labelAseoTotalSubtotal
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label43.Location = new System.Drawing.Point(559, 197);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(15, 17);
-            this.label43.TabIndex = 20;
-            this.label43.Text = "0";
+            this.labelAseoTotalSubtotal.AutoSize = true;
+            this.labelAseoTotalSubtotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalSubtotal.Location = new System.Drawing.Point(559, 333);
+            this.labelAseoTotalSubtotal.Name = "labelAseoTotalSubtotal";
+            this.labelAseoTotalSubtotal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalSubtotal.TabIndex = 27;
+            this.labelAseoTotalSubtotal.Text = "0";
             // 
-            // label44
+            // labelAseoTotalAprovechamiento
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label44.Location = new System.Drawing.Point(559, 167);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(15, 17);
-            this.label44.TabIndex = 19;
-            this.label44.Text = "0";
+            this.labelAseoTotalAprovechamiento.AutoSize = true;
+            this.labelAseoTotalAprovechamiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalAprovechamiento.Location = new System.Drawing.Point(560, 300);
+            this.labelAseoTotalAprovechamiento.Name = "labelAseoTotalAprovechamiento";
+            this.labelAseoTotalAprovechamiento.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalAprovechamiento.TabIndex = 26;
+            this.labelAseoTotalAprovechamiento.Text = "0";
             // 
-            // label45
+            // labelAseoTotalTratamientoLixiviados
             // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label45.Location = new System.Drawing.Point(559, 133);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(15, 17);
-            this.label45.TabIndex = 18;
-            this.label45.Text = "0";
+            this.labelAseoTotalTratamientoLixiviados.AutoSize = true;
+            this.labelAseoTotalTratamientoLixiviados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalTratamientoLixiviados.Location = new System.Drawing.Point(559, 263);
+            this.labelAseoTotalTratamientoLixiviados.Name = "labelAseoTotalTratamientoLixiviados";
+            this.labelAseoTotalTratamientoLixiviados.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalTratamientoLixiviados.TabIndex = 25;
+            this.labelAseoTotalTratamientoLixiviados.Text = "0";
             // 
-            // label46
+            // labelAseoTotalDisposicionFinal
             // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label46.Location = new System.Drawing.Point(559, 100);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(15, 17);
-            this.label46.TabIndex = 17;
-            this.label46.Text = "0";
+            this.labelAseoTotalDisposicionFinal.AutoSize = true;
+            this.labelAseoTotalDisposicionFinal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalDisposicionFinal.Location = new System.Drawing.Point(559, 227);
+            this.labelAseoTotalDisposicionFinal.Name = "labelAseoTotalDisposicionFinal";
+            this.labelAseoTotalDisposicionFinal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalDisposicionFinal.TabIndex = 23;
+            this.labelAseoTotalDisposicionFinal.Text = "0";
             // 
-            // label47
+            // label79
             // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label47.Location = new System.Drawing.Point(559, 71);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(15, 17);
-            this.label47.TabIndex = 16;
-            this.label47.Text = "0";
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label79.Location = new System.Drawing.Point(7, 300);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(130, 17);
+            this.label79.TabIndex = 24;
+            this.label79.Text = "Aprovechamiento:";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label76.Location = new System.Drawing.Point(7, 261);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(152, 17);
+            this.label76.TabIndex = 23;
+            this.label76.Text = "Tratamiento lixiviados:";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label71.Location = new System.Drawing.Point(7, 227);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(115, 17);
+            this.label71.TabIndex = 22;
+            this.label71.Text = "Disposicion final:";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label70.Location = new System.Drawing.Point(7, 198);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(172, 17);
+            this.label70.TabIndex = 21;
+            this.label70.Text = "Recoleccion y transporte:";
+            // 
+            // labelAseoTotalRecoleccionYTransporte
+            // 
+            this.labelAseoTotalRecoleccionYTransporte.AutoSize = true;
+            this.labelAseoTotalRecoleccionYTransporte.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalRecoleccionYTransporte.Location = new System.Drawing.Point(559, 197);
+            this.labelAseoTotalRecoleccionYTransporte.Name = "labelAseoTotalRecoleccionYTransporte";
+            this.labelAseoTotalRecoleccionYTransporte.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalRecoleccionYTransporte.TabIndex = 20;
+            this.labelAseoTotalRecoleccionYTransporte.Text = "0";
+            // 
+            // labelAseoTotalComercializacion
+            // 
+            this.labelAseoTotalComercializacion.AutoSize = true;
+            this.labelAseoTotalComercializacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalComercializacion.Location = new System.Drawing.Point(559, 167);
+            this.labelAseoTotalComercializacion.Name = "labelAseoTotalComercializacion";
+            this.labelAseoTotalComercializacion.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalComercializacion.TabIndex = 19;
+            this.labelAseoTotalComercializacion.Text = "0";
+            // 
+            // labelAseoTotalLimpiezaUrbana
+            // 
+            this.labelAseoTotalLimpiezaUrbana.AutoSize = true;
+            this.labelAseoTotalLimpiezaUrbana.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalLimpiezaUrbana.Location = new System.Drawing.Point(559, 133);
+            this.labelAseoTotalLimpiezaUrbana.Name = "labelAseoTotalLimpiezaUrbana";
+            this.labelAseoTotalLimpiezaUrbana.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalLimpiezaUrbana.TabIndex = 18;
+            this.labelAseoTotalLimpiezaUrbana.Text = "0";
+            // 
+            // labelAseoTotalBarridoYLimpieza
+            // 
+            this.labelAseoTotalBarridoYLimpieza.AutoSize = true;
+            this.labelAseoTotalBarridoYLimpieza.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalBarridoYLimpieza.Location = new System.Drawing.Point(559, 100);
+            this.labelAseoTotalBarridoYLimpieza.Name = "labelAseoTotalBarridoYLimpieza";
+            this.labelAseoTotalBarridoYLimpieza.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalBarridoYLimpieza.TabIndex = 17;
+            this.labelAseoTotalBarridoYLimpieza.Text = "0";
+            // 
+            // labelAseoTotalToneladasPorSuscriptor
+            // 
+            this.labelAseoTotalToneladasPorSuscriptor.AutoSize = true;
+            this.labelAseoTotalToneladasPorSuscriptor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoTotalToneladasPorSuscriptor.Location = new System.Drawing.Point(559, 71);
+            this.labelAseoTotalToneladasPorSuscriptor.Name = "labelAseoTotalToneladasPorSuscriptor";
+            this.labelAseoTotalToneladasPorSuscriptor.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoTotalToneladasPorSuscriptor.TabIndex = 16;
+            this.labelAseoTotalToneladasPorSuscriptor.Text = "0";
             // 
             // label48
             // 
@@ -1927,14 +2008,14 @@ namespace aca1
             // 
             this.panel44.BackColor = System.Drawing.Color.Transparent;
             this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel44.Controls.Add(this.label96);
-            this.panel44.Controls.Add(this.label49);
-            this.panel44.Controls.Add(this.label87);
-            this.panel44.Controls.Add(this.label82);
-            this.panel44.Controls.Add(this.label86);
-            this.panel44.Controls.Add(this.label50);
-            this.panel44.Controls.Add(this.label51);
-            this.panel44.Controls.Add(this.label52);
+            this.panel44.Controls.Add(this.labelAseoSCAprovechamiento);
+            this.panel44.Controls.Add(this.labelAseoSCComercializacion);
+            this.panel44.Controls.Add(this.labelAseoSCTratamientoLixiviados);
+            this.panel44.Controls.Add(this.labelAseoSCRecoleccionYTransporte);
+            this.panel44.Controls.Add(this.labelAseoSCDisposicionFinal);
+            this.panel44.Controls.Add(this.labelAseoSCLimpiezaUrbana);
+            this.panel44.Controls.Add(this.labelAseoSCBarridoYLimpieza);
+            this.panel44.Controls.Add(this.labelAseoSCToneladasPorSuscriptor);
             this.panel44.Controls.Add(this.panel45);
             this.panel44.Controls.Add(this.panel46);
             this.panel44.Controls.Add(this.panel48);
@@ -1943,45 +2024,85 @@ namespace aca1
             this.panel44.Size = new System.Drawing.Size(361, 306);
             this.panel44.TabIndex = 4;
             // 
-            // label49
+            // labelAseoSCAprovechamiento
             // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label49.Location = new System.Drawing.Point(268, 107);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(15, 17);
-            this.label49.TabIndex = 16;
-            this.label49.Text = "0";
+            this.labelAseoSCAprovechamiento.AutoSize = true;
+            this.labelAseoSCAprovechamiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCAprovechamiento.Location = new System.Drawing.Point(268, 240);
+            this.labelAseoSCAprovechamiento.Name = "labelAseoSCAprovechamiento";
+            this.labelAseoSCAprovechamiento.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCAprovechamiento.TabIndex = 27;
+            this.labelAseoSCAprovechamiento.Text = "0";
             // 
-            // label50
+            // labelAseoSCComercializacion
             // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label50.Location = new System.Drawing.Point(268, 73);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(15, 17);
-            this.label50.TabIndex = 15;
-            this.label50.Text = "0";
+            this.labelAseoSCComercializacion.AutoSize = true;
+            this.labelAseoSCComercializacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCComercializacion.Location = new System.Drawing.Point(268, 107);
+            this.labelAseoSCComercializacion.Name = "labelAseoSCComercializacion";
+            this.labelAseoSCComercializacion.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCComercializacion.TabIndex = 16;
+            this.labelAseoSCComercializacion.Text = "0";
             // 
-            // label51
+            // labelAseoSCTratamientoLixiviados
             // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label51.Location = new System.Drawing.Point(268, 40);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(15, 17);
-            this.label51.TabIndex = 14;
-            this.label51.Text = "0";
+            this.labelAseoSCTratamientoLixiviados.AutoSize = true;
+            this.labelAseoSCTratamientoLixiviados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCTratamientoLixiviados.Location = new System.Drawing.Point(268, 201);
+            this.labelAseoSCTratamientoLixiviados.Name = "labelAseoSCTratamientoLixiviados";
+            this.labelAseoSCTratamientoLixiviados.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCTratamientoLixiviados.TabIndex = 22;
+            this.labelAseoSCTratamientoLixiviados.Text = "0";
             // 
-            // label52
+            // labelAseoSCRecoleccionYTransporte
             // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label52.Location = new System.Drawing.Point(268, 11);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(15, 17);
-            this.label52.TabIndex = 13;
-            this.label52.Text = "0";
+            this.labelAseoSCRecoleccionYTransporte.AutoSize = true;
+            this.labelAseoSCRecoleccionYTransporte.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCRecoleccionYTransporte.Location = new System.Drawing.Point(268, 138);
+            this.labelAseoSCRecoleccionYTransporte.Name = "labelAseoSCRecoleccionYTransporte";
+            this.labelAseoSCRecoleccionYTransporte.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCRecoleccionYTransporte.TabIndex = 17;
+            this.labelAseoSCRecoleccionYTransporte.Text = "0";
+            // 
+            // labelAseoSCDisposicionFinal
+            // 
+            this.labelAseoSCDisposicionFinal.AutoSize = true;
+            this.labelAseoSCDisposicionFinal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCDisposicionFinal.Location = new System.Drawing.Point(268, 167);
+            this.labelAseoSCDisposicionFinal.Name = "labelAseoSCDisposicionFinal";
+            this.labelAseoSCDisposicionFinal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCDisposicionFinal.TabIndex = 21;
+            this.labelAseoSCDisposicionFinal.Text = "0";
+            // 
+            // labelAseoSCLimpiezaUrbana
+            // 
+            this.labelAseoSCLimpiezaUrbana.AutoSize = true;
+            this.labelAseoSCLimpiezaUrbana.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCLimpiezaUrbana.Location = new System.Drawing.Point(268, 73);
+            this.labelAseoSCLimpiezaUrbana.Name = "labelAseoSCLimpiezaUrbana";
+            this.labelAseoSCLimpiezaUrbana.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCLimpiezaUrbana.TabIndex = 15;
+            this.labelAseoSCLimpiezaUrbana.Text = "0";
+            // 
+            // labelAseoSCBarridoYLimpieza
+            // 
+            this.labelAseoSCBarridoYLimpieza.AutoSize = true;
+            this.labelAseoSCBarridoYLimpieza.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCBarridoYLimpieza.Location = new System.Drawing.Point(268, 40);
+            this.labelAseoSCBarridoYLimpieza.Name = "labelAseoSCBarridoYLimpieza";
+            this.labelAseoSCBarridoYLimpieza.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCBarridoYLimpieza.TabIndex = 14;
+            this.labelAseoSCBarridoYLimpieza.Text = "0";
+            // 
+            // labelAseoSCToneladasPorSuscriptor
+            // 
+            this.labelAseoSCToneladasPorSuscriptor.AutoSize = true;
+            this.labelAseoSCToneladasPorSuscriptor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoSCToneladasPorSuscriptor.Location = new System.Drawing.Point(268, 11);
+            this.labelAseoSCToneladasPorSuscriptor.Name = "labelAseoSCToneladasPorSuscriptor";
+            this.labelAseoSCToneladasPorSuscriptor.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoSCToneladasPorSuscriptor.TabIndex = 13;
+            this.labelAseoSCToneladasPorSuscriptor.Text = "0";
             // 
             // panel45
             // 
@@ -1994,181 +2115,292 @@ namespace aca1
             // panel46
             // 
             this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel46.Controls.Add(this.label97);
-            this.panel46.Controls.Add(this.label88);
-            this.panel46.Controls.Add(this.label85);
-            this.panel46.Controls.Add(this.label53);
-            this.panel46.Controls.Add(this.label83);
-            this.panel46.Controls.Add(this.label54);
-            this.panel46.Controls.Add(this.label55);
-            this.panel46.Controls.Add(this.label56);
+            this.panel46.Controls.Add(this.labelAseoVTAprovechamiento);
+            this.panel46.Controls.Add(this.labelAseoVTTratamientoLixiviados);
+            this.panel46.Controls.Add(this.labelAseoVTDisposicionFinal);
+            this.panel46.Controls.Add(this.labelAseoVTComercializacion);
+            this.panel46.Controls.Add(this.labelAseoVTRecoleccionYTransporte);
+            this.panel46.Controls.Add(this.labelAseoVTLimpiezaUrbana);
+            this.panel46.Controls.Add(this.labelAseoVTBarridoYLimpieza);
+            this.panel46.Controls.Add(this.labelAseoVTToneladasPorSuscriptor);
             this.panel46.Controls.Add(this.panel47);
             this.panel46.Location = new System.Drawing.Point(71, -2);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(191, 307);
             this.panel46.TabIndex = 1;
             // 
-            // label53
+            // labelAseoVTAprovechamiento
             // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label53.Location = new System.Drawing.Point(100, 108);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(15, 17);
-            this.label53.TabIndex = 15;
-            this.label53.Text = "0";
+            this.labelAseoVTAprovechamiento.AutoSize = true;
+            this.labelAseoVTAprovechamiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTAprovechamiento.Location = new System.Drawing.Point(100, 241);
+            this.labelAseoVTAprovechamiento.Name = "labelAseoVTAprovechamiento";
+            this.labelAseoVTAprovechamiento.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTAprovechamiento.TabIndex = 28;
+            this.labelAseoVTAprovechamiento.Text = "0";
             // 
-            // label54
+            // labelAseoVTTratamientoLixiviados
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label54.Location = new System.Drawing.Point(100, 74);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(15, 17);
-            this.label54.TabIndex = 14;
-            this.label54.Text = "0";
+            this.labelAseoVTTratamientoLixiviados.AutoSize = true;
+            this.labelAseoVTTratamientoLixiviados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTTratamientoLixiviados.Location = new System.Drawing.Point(100, 204);
+            this.labelAseoVTTratamientoLixiviados.Name = "labelAseoVTTratamientoLixiviados";
+            this.labelAseoVTTratamientoLixiviados.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTTratamientoLixiviados.TabIndex = 23;
+            this.labelAseoVTTratamientoLixiviados.Text = "0";
             // 
-            // label55
+            // labelAseoVTDisposicionFinal
             // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label55.Location = new System.Drawing.Point(100, 41);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(15, 17);
-            this.label55.TabIndex = 13;
-            this.label55.Text = "0";
+            this.labelAseoVTDisposicionFinal.AutoSize = true;
+            this.labelAseoVTDisposicionFinal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTDisposicionFinal.Location = new System.Drawing.Point(100, 168);
+            this.labelAseoVTDisposicionFinal.Name = "labelAseoVTDisposicionFinal";
+            this.labelAseoVTDisposicionFinal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTDisposicionFinal.TabIndex = 20;
+            this.labelAseoVTDisposicionFinal.Text = "0";
             // 
-            // label56
+            // labelAseoVTComercializacion
             // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label56.Location = new System.Drawing.Point(100, 12);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(15, 17);
-            this.label56.TabIndex = 12;
-            this.label56.Text = "0";
+            this.labelAseoVTComercializacion.AutoSize = true;
+            this.labelAseoVTComercializacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTComercializacion.Location = new System.Drawing.Point(100, 108);
+            this.labelAseoVTComercializacion.Name = "labelAseoVTComercializacion";
+            this.labelAseoVTComercializacion.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTComercializacion.TabIndex = 15;
+            this.labelAseoVTComercializacion.Text = "0";
+            // 
+            // labelAseoVTRecoleccionYTransporte
+            // 
+            this.labelAseoVTRecoleccionYTransporte.AutoSize = true;
+            this.labelAseoVTRecoleccionYTransporte.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTRecoleccionYTransporte.Location = new System.Drawing.Point(100, 139);
+            this.labelAseoVTRecoleccionYTransporte.Name = "labelAseoVTRecoleccionYTransporte";
+            this.labelAseoVTRecoleccionYTransporte.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTRecoleccionYTransporte.TabIndex = 18;
+            this.labelAseoVTRecoleccionYTransporte.Text = "0";
+            // 
+            // labelAseoVTLimpiezaUrbana
+            // 
+            this.labelAseoVTLimpiezaUrbana.AutoSize = true;
+            this.labelAseoVTLimpiezaUrbana.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTLimpiezaUrbana.Location = new System.Drawing.Point(100, 74);
+            this.labelAseoVTLimpiezaUrbana.Name = "labelAseoVTLimpiezaUrbana";
+            this.labelAseoVTLimpiezaUrbana.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTLimpiezaUrbana.TabIndex = 14;
+            this.labelAseoVTLimpiezaUrbana.Text = "0";
+            // 
+            // labelAseoVTBarridoYLimpieza
+            // 
+            this.labelAseoVTBarridoYLimpieza.AutoSize = true;
+            this.labelAseoVTBarridoYLimpieza.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTBarridoYLimpieza.Location = new System.Drawing.Point(100, 41);
+            this.labelAseoVTBarridoYLimpieza.Name = "labelAseoVTBarridoYLimpieza";
+            this.labelAseoVTBarridoYLimpieza.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTBarridoYLimpieza.TabIndex = 13;
+            this.labelAseoVTBarridoYLimpieza.Text = "0";
+            // 
+            // labelAseoVTToneladasPorSuscriptor
+            // 
+            this.labelAseoVTToneladasPorSuscriptor.AutoSize = true;
+            this.labelAseoVTToneladasPorSuscriptor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVTToneladasPorSuscriptor.Location = new System.Drawing.Point(100, 12);
+            this.labelAseoVTToneladasPorSuscriptor.Name = "labelAseoVTToneladasPorSuscriptor";
+            this.labelAseoVTToneladasPorSuscriptor.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVTToneladasPorSuscriptor.TabIndex = 12;
+            this.labelAseoVTToneladasPorSuscriptor.Text = "0";
             // 
             // panel47
             // 
             this.panel47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel47.Controls.Add(this.label89);
-            this.panel47.Controls.Add(this.label91);
-            this.panel47.Controls.Add(this.label61);
-            this.panel47.Controls.Add(this.label84);
-            this.panel47.Controls.Add(this.label80);
-            this.panel47.Controls.Add(this.label64);
-            this.panel47.Controls.Add(this.label65);
-            this.panel47.Controls.Add(this.label66);
+            this.panel47.Controls.Add(this.labelAseoVUAprovechamiento);
+            this.panel47.Controls.Add(this.labelAseoVUTratamientoLixiviados);
+            this.panel47.Controls.Add(this.labelAseoVUComercializacion);
+            this.panel47.Controls.Add(this.labelAseoVURecoleccionYTransporte);
+            this.panel47.Controls.Add(this.labelAseoVUDisposicionFinal);
+            this.panel47.Controls.Add(this.labelAseoVULimpiezaUrbana);
+            this.panel47.Controls.Add(this.labelAseoVUBarridoYLimpieza);
+            this.panel47.Controls.Add(this.labelAseoVUToneladasPorSuscriptor);
             this.panel47.Location = new System.Drawing.Point(-1, 0);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(95, 306);
             this.panel47.TabIndex = 7;
             // 
-            // label61
+            // labelAseoVUAprovechamiento
             // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label61.Location = new System.Drawing.Point(6, 107);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(15, 17);
-            this.label61.TabIndex = 14;
-            this.label61.Text = "0";
+            this.labelAseoVUAprovechamiento.AutoSize = true;
+            this.labelAseoVUAprovechamiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVUAprovechamiento.Location = new System.Drawing.Point(6, 240);
+            this.labelAseoVUAprovechamiento.Name = "labelAseoVUAprovechamiento";
+            this.labelAseoVUAprovechamiento.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVUAprovechamiento.TabIndex = 24;
+            this.labelAseoVUAprovechamiento.Text = "0";
             // 
-            // label64
+            // labelAseoVUTratamientoLixiviados
             // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label64.Location = new System.Drawing.Point(6, 73);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(15, 17);
-            this.label64.TabIndex = 13;
-            this.label64.Text = "0";
+            this.labelAseoVUTratamientoLixiviados.AutoSize = true;
+            this.labelAseoVUTratamientoLixiviados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVUTratamientoLixiviados.Location = new System.Drawing.Point(6, 203);
+            this.labelAseoVUTratamientoLixiviados.Name = "labelAseoVUTratamientoLixiviados";
+            this.labelAseoVUTratamientoLixiviados.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVUTratamientoLixiviados.TabIndex = 26;
+            this.labelAseoVUTratamientoLixiviados.Text = "0";
             // 
-            // label65
+            // labelAseoVUComercializacion
             // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label65.Location = new System.Drawing.Point(6, 40);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(15, 17);
-            this.label65.TabIndex = 12;
-            this.label65.Text = "0";
+            this.labelAseoVUComercializacion.AutoSize = true;
+            this.labelAseoVUComercializacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVUComercializacion.Location = new System.Drawing.Point(6, 107);
+            this.labelAseoVUComercializacion.Name = "labelAseoVUComercializacion";
+            this.labelAseoVUComercializacion.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVUComercializacion.TabIndex = 14;
+            this.labelAseoVUComercializacion.Text = "0";
             // 
-            // label66
+            // labelAseoVURecoleccionYTransporte
             // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label66.Location = new System.Drawing.Point(6, 11);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(15, 17);
-            this.label66.TabIndex = 11;
-            this.label66.Text = "0";
+            this.labelAseoVURecoleccionYTransporte.AutoSize = true;
+            this.labelAseoVURecoleccionYTransporte.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVURecoleccionYTransporte.Location = new System.Drawing.Point(6, 138);
+            this.labelAseoVURecoleccionYTransporte.Name = "labelAseoVURecoleccionYTransporte";
+            this.labelAseoVURecoleccionYTransporte.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVURecoleccionYTransporte.TabIndex = 19;
+            this.labelAseoVURecoleccionYTransporte.Text = "0";
+            // 
+            // labelAseoVUDisposicionFinal
+            // 
+            this.labelAseoVUDisposicionFinal.AutoSize = true;
+            this.labelAseoVUDisposicionFinal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVUDisposicionFinal.Location = new System.Drawing.Point(6, 167);
+            this.labelAseoVUDisposicionFinal.Name = "labelAseoVUDisposicionFinal";
+            this.labelAseoVUDisposicionFinal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVUDisposicionFinal.TabIndex = 15;
+            this.labelAseoVUDisposicionFinal.Text = "0";
+            // 
+            // labelAseoVULimpiezaUrbana
+            // 
+            this.labelAseoVULimpiezaUrbana.AutoSize = true;
+            this.labelAseoVULimpiezaUrbana.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVULimpiezaUrbana.Location = new System.Drawing.Point(6, 73);
+            this.labelAseoVULimpiezaUrbana.Name = "labelAseoVULimpiezaUrbana";
+            this.labelAseoVULimpiezaUrbana.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVULimpiezaUrbana.TabIndex = 13;
+            this.labelAseoVULimpiezaUrbana.Text = "0";
+            // 
+            // labelAseoVUBarridoYLimpieza
+            // 
+            this.labelAseoVUBarridoYLimpieza.AutoSize = true;
+            this.labelAseoVUBarridoYLimpieza.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVUBarridoYLimpieza.Location = new System.Drawing.Point(6, 40);
+            this.labelAseoVUBarridoYLimpieza.Name = "labelAseoVUBarridoYLimpieza";
+            this.labelAseoVUBarridoYLimpieza.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVUBarridoYLimpieza.TabIndex = 12;
+            this.labelAseoVUBarridoYLimpieza.Text = "0";
+            // 
+            // labelAseoVUToneladasPorSuscriptor
+            // 
+            this.labelAseoVUToneladasPorSuscriptor.AutoSize = true;
+            this.labelAseoVUToneladasPorSuscriptor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoVUToneladasPorSuscriptor.Location = new System.Drawing.Point(6, 11);
+            this.labelAseoVUToneladasPorSuscriptor.Name = "labelAseoVUToneladasPorSuscriptor";
+            this.labelAseoVUToneladasPorSuscriptor.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoVUToneladasPorSuscriptor.TabIndex = 11;
+            this.labelAseoVUToneladasPorSuscriptor.Text = "0";
             // 
             // panel48
             // 
             this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel48.Controls.Add(this.label90);
-            this.panel48.Controls.Add(this.label92);
-            this.panel48.Controls.Add(this.label81);
-            this.panel48.Controls.Add(this.label67);
-            this.panel48.Controls.Add(this.label68);
-            this.panel48.Controls.Add(this.label69);
-            this.panel48.Controls.Add(this.labelAseoCantidadConsumoBasico);
-            this.panel48.Controls.Add(this.labelAseoCantidadCargoFijo);
+            this.panel48.Controls.Add(this.labelAseoCantidadSubtotal);
+            this.panel48.Controls.Add(this.labelAseoCantidadAprovechamiento);
+            this.panel48.Controls.Add(this.labelAseoCantidadTratamientoLixiviados);
+            this.panel48.Controls.Add(this.labelAseoCantidadDisposicionFinal);
+            this.panel48.Controls.Add(this.labelAseoCantidadRecoleccionYTransporte);
+            this.panel48.Controls.Add(this.labelAseoCantidadComercializacion);
+            this.panel48.Controls.Add(this.labelAseoCantidadLimpiezaUrbana);
+            this.panel48.Controls.Add(this.labelAseoCantidadBarridoYLimpieza);
+            this.panel48.Controls.Add(this.labelAseoCantidadToneladasPorSuscriptor);
             this.panel48.Location = new System.Drawing.Point(-1, -2);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(73, 307);
             this.panel48.TabIndex = 0;
             // 
-            // label67
+            // labelAseoCantidadAprovechamiento
             // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label67.Location = new System.Drawing.Point(21, 139);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(15, 17);
-            this.label67.TabIndex = 14;
-            this.label67.Text = "0";
+            this.labelAseoCantidadAprovechamiento.AutoSize = true;
+            this.labelAseoCantidadAprovechamiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadAprovechamiento.Location = new System.Drawing.Point(21, 241);
+            this.labelAseoCantidadAprovechamiento.Name = "labelAseoCantidadAprovechamiento";
+            this.labelAseoCantidadAprovechamiento.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadAprovechamiento.TabIndex = 25;
+            this.labelAseoCantidadAprovechamiento.Text = "0";
             // 
-            // label68
+            // labelAseoCantidadTratamientoLixiviados
             // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label68.Location = new System.Drawing.Point(21, 108);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(15, 17);
-            this.label68.TabIndex = 13;
-            this.label68.Text = "0";
+            this.labelAseoCantidadTratamientoLixiviados.AutoSize = true;
+            this.labelAseoCantidadTratamientoLixiviados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadTratamientoLixiviados.Location = new System.Drawing.Point(21, 202);
+            this.labelAseoCantidadTratamientoLixiviados.Name = "labelAseoCantidadTratamientoLixiviados";
+            this.labelAseoCantidadTratamientoLixiviados.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadTratamientoLixiviados.TabIndex = 27;
+            this.labelAseoCantidadTratamientoLixiviados.Text = "0";
             // 
-            // label69
+            // labelAseoCantidadDisposicionFinal
             // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label69.Location = new System.Drawing.Point(21, 74);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(15, 17);
-            this.label69.TabIndex = 12;
-            this.label69.Text = "0";
+            this.labelAseoCantidadDisposicionFinal.AutoSize = true;
+            this.labelAseoCantidadDisposicionFinal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadDisposicionFinal.Location = new System.Drawing.Point(21, 168);
+            this.labelAseoCantidadDisposicionFinal.Name = "labelAseoCantidadDisposicionFinal";
+            this.labelAseoCantidadDisposicionFinal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadDisposicionFinal.TabIndex = 16;
+            this.labelAseoCantidadDisposicionFinal.Text = "0";
             // 
-            // labelAseoCantidadConsumoBasico
+            // labelAseoCantidadRecoleccionYTransporte
             // 
-            this.labelAseoCantidadConsumoBasico.AutoSize = true;
-            this.labelAseoCantidadConsumoBasico.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAseoCantidadConsumoBasico.Location = new System.Drawing.Point(21, 41);
-            this.labelAseoCantidadConsumoBasico.Name = "labelAseoCantidadConsumoBasico";
-            this.labelAseoCantidadConsumoBasico.Size = new System.Drawing.Size(15, 17);
-            this.labelAseoCantidadConsumoBasico.TabIndex = 11;
-            this.labelAseoCantidadConsumoBasico.Text = "0";
+            this.labelAseoCantidadRecoleccionYTransporte.AutoSize = true;
+            this.labelAseoCantidadRecoleccionYTransporte.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadRecoleccionYTransporte.Location = new System.Drawing.Point(21, 139);
+            this.labelAseoCantidadRecoleccionYTransporte.Name = "labelAseoCantidadRecoleccionYTransporte";
+            this.labelAseoCantidadRecoleccionYTransporte.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadRecoleccionYTransporte.TabIndex = 14;
+            this.labelAseoCantidadRecoleccionYTransporte.Text = "0";
             // 
-            // labelAseoCantidadCargoFijo
+            // labelAseoCantidadComercializacion
             // 
-            this.labelAseoCantidadCargoFijo.AutoSize = true;
-            this.labelAseoCantidadCargoFijo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAseoCantidadCargoFijo.Location = new System.Drawing.Point(21, 12);
-            this.labelAseoCantidadCargoFijo.Name = "labelAseoCantidadCargoFijo";
-            this.labelAseoCantidadCargoFijo.Size = new System.Drawing.Size(15, 17);
-            this.labelAseoCantidadCargoFijo.TabIndex = 10;
-            this.labelAseoCantidadCargoFijo.Text = "1";
+            this.labelAseoCantidadComercializacion.AutoSize = true;
+            this.labelAseoCantidadComercializacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadComercializacion.Location = new System.Drawing.Point(21, 108);
+            this.labelAseoCantidadComercializacion.Name = "labelAseoCantidadComercializacion";
+            this.labelAseoCantidadComercializacion.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadComercializacion.TabIndex = 13;
+            this.labelAseoCantidadComercializacion.Text = "0";
+            // 
+            // labelAseoCantidadLimpiezaUrbana
+            // 
+            this.labelAseoCantidadLimpiezaUrbana.AutoSize = true;
+            this.labelAseoCantidadLimpiezaUrbana.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadLimpiezaUrbana.Location = new System.Drawing.Point(21, 74);
+            this.labelAseoCantidadLimpiezaUrbana.Name = "labelAseoCantidadLimpiezaUrbana";
+            this.labelAseoCantidadLimpiezaUrbana.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadLimpiezaUrbana.TabIndex = 12;
+            this.labelAseoCantidadLimpiezaUrbana.Text = "0";
+            // 
+            // labelAseoCantidadBarridoYLimpieza
+            // 
+            this.labelAseoCantidadBarridoYLimpieza.AutoSize = true;
+            this.labelAseoCantidadBarridoYLimpieza.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadBarridoYLimpieza.Location = new System.Drawing.Point(21, 41);
+            this.labelAseoCantidadBarridoYLimpieza.Name = "labelAseoCantidadBarridoYLimpieza";
+            this.labelAseoCantidadBarridoYLimpieza.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadBarridoYLimpieza.TabIndex = 11;
+            this.labelAseoCantidadBarridoYLimpieza.Text = "0";
+            // 
+            // labelAseoCantidadToneladasPorSuscriptor
+            // 
+            this.labelAseoCantidadToneladasPorSuscriptor.AutoSize = true;
+            this.labelAseoCantidadToneladasPorSuscriptor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadToneladasPorSuscriptor.Location = new System.Drawing.Point(21, 12);
+            this.labelAseoCantidadToneladasPorSuscriptor.Name = "labelAseoCantidadToneladasPorSuscriptor";
+            this.labelAseoCantidadToneladasPorSuscriptor.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadToneladasPorSuscriptor.TabIndex = 10;
+            this.labelAseoCantidadToneladasPorSuscriptor.Text = "0";
             // 
             // label72
             // 
@@ -2251,235 +2483,15 @@ namespace aca1
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // label70
+            // labelAseoCantidadSubtotal
             // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label70.Location = new System.Drawing.Point(7, 198);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(172, 17);
-            this.label70.TabIndex = 21;
-            this.label70.Text = "Recoleccion y transporte:";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label71.Location = new System.Drawing.Point(7, 227);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(115, 17);
-            this.label71.TabIndex = 22;
-            this.label71.Text = "Disposicion final:";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label76.Location = new System.Drawing.Point(7, 261);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(152, 17);
-            this.label76.TabIndex = 23;
-            this.label76.Text = "Tratamiento lixiviados:";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label79.Location = new System.Drawing.Point(7, 300);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(130, 17);
-            this.label79.TabIndex = 24;
-            this.label79.Text = "Aprovechamiento:";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label80.Location = new System.Drawing.Point(6, 167);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(15, 17);
-            this.label80.TabIndex = 15;
-            this.label80.Text = "0";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label81.Location = new System.Drawing.Point(21, 168);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(15, 17);
-            this.label81.TabIndex = 16;
-            this.label81.Text = "0";
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label82.Location = new System.Drawing.Point(268, 138);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(15, 17);
-            this.label82.TabIndex = 17;
-            this.label82.Text = "0";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label83.Location = new System.Drawing.Point(100, 139);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(15, 17);
-            this.label83.TabIndex = 18;
-            this.label83.Text = "0";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label84.Location = new System.Drawing.Point(6, 138);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(15, 17);
-            this.label84.TabIndex = 19;
-            this.label84.Text = "0";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label85.Location = new System.Drawing.Point(100, 168);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(15, 17);
-            this.label85.TabIndex = 20;
-            this.label85.Text = "0";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label86.Location = new System.Drawing.Point(268, 167);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(15, 17);
-            this.label86.TabIndex = 21;
-            this.label86.Text = "0";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label87.Location = new System.Drawing.Point(268, 201);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(15, 17);
-            this.label87.TabIndex = 22;
-            this.label87.Text = "0";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label88.Location = new System.Drawing.Point(100, 204);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(15, 17);
-            this.label88.TabIndex = 23;
-            this.label88.Text = "0";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label89.Location = new System.Drawing.Point(6, 240);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(15, 17);
-            this.label89.TabIndex = 24;
-            this.label89.Text = "0";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label90.Location = new System.Drawing.Point(21, 241);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(15, 17);
-            this.label90.TabIndex = 25;
-            this.label90.Text = "0";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label91.Location = new System.Drawing.Point(6, 203);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(15, 17);
-            this.label91.TabIndex = 26;
-            this.label91.Text = "0";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label92.Location = new System.Drawing.Point(21, 202);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(15, 17);
-            this.label92.TabIndex = 27;
-            this.label92.Text = "0";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label93.Location = new System.Drawing.Point(559, 227);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(15, 17);
-            this.label93.TabIndex = 23;
-            this.label93.Text = "0";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label94.Location = new System.Drawing.Point(559, 263);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(15, 17);
-            this.label94.TabIndex = 25;
-            this.label94.Text = "0";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label95.Location = new System.Drawing.Point(560, 300);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(15, 17);
-            this.label95.TabIndex = 26;
-            this.label95.Text = "0";
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label96.Location = new System.Drawing.Point(268, 240);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(15, 17);
-            this.label96.TabIndex = 27;
-            this.label96.Text = "0";
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label97.Location = new System.Drawing.Point(100, 241);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(15, 17);
-            this.label97.TabIndex = 28;
-            this.label97.Text = "0";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label98.Location = new System.Drawing.Point(559, 333);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(15, 17);
-            this.label98.TabIndex = 27;
-            this.label98.Text = "0";
+            this.labelAseoCantidadSubtotal.AutoSize = true;
+            this.labelAseoCantidadSubtotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelAseoCantidadSubtotal.Location = new System.Drawing.Point(21, 273);
+            this.labelAseoCantidadSubtotal.Name = "labelAseoCantidadSubtotal";
+            this.labelAseoCantidadSubtotal.Size = new System.Drawing.Size(15, 17);
+            this.labelAseoCantidadSubtotal.TabIndex = 28;
+            this.labelAseoCantidadSubtotal.Text = "0";
             // 
             // FormFactura
             // 
@@ -2741,34 +2753,34 @@ namespace aca1
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label labelAseoTotalRecoleccionYTransporte;
+        private System.Windows.Forms.Label labelAseoTotalComercializacion;
+        private System.Windows.Forms.Label labelAseoTotalLimpiezaUrbana;
+        private System.Windows.Forms.Label labelAseoTotalBarridoYLimpieza;
+        private System.Windows.Forms.Label labelAseoTotalToneladasPorSuscriptor;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label labelAseoSCComercializacion;
+        private System.Windows.Forms.Label labelAseoSCLimpiezaUrbana;
+        private System.Windows.Forms.Label labelAseoSCBarridoYLimpieza;
+        private System.Windows.Forms.Label labelAseoSCToneladasPorSuscriptor;
         private System.Windows.Forms.Panel panel45;
         private System.Windows.Forms.Panel panel46;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label labelAseoVTComercializacion;
+        private System.Windows.Forms.Label labelAseoVTLimpiezaUrbana;
+        private System.Windows.Forms.Label labelAseoVTBarridoYLimpieza;
+        private System.Windows.Forms.Label labelAseoVTToneladasPorSuscriptor;
         private System.Windows.Forms.Panel panel47;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label labelAseoVUComercializacion;
+        private System.Windows.Forms.Label labelAseoVULimpiezaUrbana;
+        private System.Windows.Forms.Label labelAseoVUBarridoYLimpieza;
+        private System.Windows.Forms.Label labelAseoVUToneladasPorSuscriptor;
         private System.Windows.Forms.Panel panel48;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label labelAseoCantidadConsumoBasico;
-        private System.Windows.Forms.Label labelAseoCantidadCargoFijo;
+        private System.Windows.Forms.Label labelAseoCantidadRecoleccionYTransporte;
+        private System.Windows.Forms.Label labelAseoCantidadComercializacion;
+        private System.Windows.Forms.Label labelAseoCantidadLimpiezaUrbana;
+        private System.Windows.Forms.Label labelAseoCantidadBarridoYLimpieza;
+        private System.Windows.Forms.Label labelAseoCantidadToneladasPorSuscriptor;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
@@ -2781,24 +2793,25 @@ namespace aca1
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label labelAseoTotalSubtotal;
+        private System.Windows.Forms.Label labelAseoTotalAprovechamiento;
+        private System.Windows.Forms.Label labelAseoTotalTratamientoLixiviados;
+        private System.Windows.Forms.Label labelAseoTotalDisposicionFinal;
+        private System.Windows.Forms.Label labelAseoSCAprovechamiento;
+        private System.Windows.Forms.Label labelAseoSCTratamientoLixiviados;
+        private System.Windows.Forms.Label labelAseoSCRecoleccionYTransporte;
+        private System.Windows.Forms.Label labelAseoSCDisposicionFinal;
+        private System.Windows.Forms.Label labelAseoVTAprovechamiento;
+        private System.Windows.Forms.Label labelAseoVTTratamientoLixiviados;
+        private System.Windows.Forms.Label labelAseoVTDisposicionFinal;
+        private System.Windows.Forms.Label labelAseoVTRecoleccionYTransporte;
+        private System.Windows.Forms.Label labelAseoVUAprovechamiento;
+        private System.Windows.Forms.Label labelAseoVUTratamientoLixiviados;
+        private System.Windows.Forms.Label labelAseoVURecoleccionYTransporte;
+        private System.Windows.Forms.Label labelAseoVUDisposicionFinal;
+        private System.Windows.Forms.Label labelAseoCantidadAprovechamiento;
+        private System.Windows.Forms.Label labelAseoCantidadTratamientoLixiviados;
+        private System.Windows.Forms.Label labelAseoCantidadDisposicionFinal;
+        private System.Windows.Forms.Label labelAseoCantidadSubtotal;
     }
 }
