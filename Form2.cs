@@ -21,6 +21,10 @@ namespace aca1
         Aseo aseo;
         int porcentajeContribucion;
         int porcentajeSubsidio;
+        TarifasAcueducto tarifasAcueducto;
+        TarifasAlcantarillado tarifasAlcantarillado;
+        TarifasAseo tarifasAseo;
+
         public FormFactura(int idFactura)
         {
             InitializeComponent();
@@ -43,6 +47,73 @@ namespace aca1
 
             // String query para realizar las consultas
             StringBuilder sb = new StringBuilder();
+
+            // Query para obtener tarifas de Acueducto, Alcantarilaldo, Aseo
+            sb.Append("SELECT ");
+            /*****************************************/
+            sb.Append("Factura.id AS idFactura, ");
+            sb.Append("Tarifas_acueducto.Cargo_fijo AS Cargo_fijo_Acueducto, ");
+            sb.Append("Tarifas_acueducto.Consumo_basico AS Consumo_basico_Acueducto, ");
+            sb.Append("Tarifas_acueducto.Consumo_complementario AS Consumo_complementario_Acueducto, ");
+            sb.Append("Tarifas_acueducto.Consumo_suntuario AS Consumo_suntuario_Acueducto, ");
+            sb.Append("Tarifas_alcantarillado.Cargo_fijo AS Cargo_fijo_Alcantarillado, ");
+            sb.Append("Tarifas_alcantarillado.Consumo_basico AS Consumo_basico_Alcantarillado, ");
+            sb.Append("Tarifas_alcantarillado.Consumo_complementario AS Consumo_complementario_Alcantarillado, ");
+            sb.Append("Tarifas_alcantarillado.Consumo_suntuario AS Consumo_suntuario_Alcantarillado, ");
+            sb.Append("Tarifas_aseo.Toneladas_por_suscriptor, ");
+            sb.Append("Tarifas_aseo.Barrido_y_limpieza, ");
+            sb.Append("Tarifas_aseo.Limpieza_urbana, ");
+            sb.Append("Tarifas_aseo.Comercializacion, ");
+            sb.Append("Tarifas_aseo.Recoleccion_y_transporte, ");
+            sb.Append("Tarifas_aseo.Disposicion_final, ");
+            sb.Append("Tarifas_aseo.Tratamiento_lixiviados, ");
+            sb.Append("Tarifas_aseo.Aprovechamiento, ");
+            sb.Append("Tarifas_aseo.Tarifa_final ");
+            /*****************************************/
+            sb.Append("FROM Factura ");
+            /*****************************************/
+            sb.Append("LEFT JOIN Usuario ON Usuario.id = Factura.idUsuario ");
+            sb.Append("LEFT JOIN Estrato ON Estrato.id = Usuario.idEstrato ");
+            sb.Append("LEFT JOIN Tarifas_acueducto ON Estrato.id = Tarifas_acueducto.idEstrato ");
+            sb.Append("LEFT JOIN Tarifas_alcantarillado ON Estrato.id = Tarifas_alcantarillado.idEstrato ");
+            sb.Append("LEFT JOIN Tarifas_aseo ON Estrato.id = Tarifas_aseo.idEstrato ");
+            /*****************************************/
+            sb.Append($"WHERE Factura.id = {idFactura};");
+
+            // Consulta para generar datos de tarifas
+            SqlDataReader dr = conexion.DataReader(sb.ToString());
+
+            while (dr.Read())
+            {
+                // Instancia TarifasAcueducto
+                this.tarifasAcueducto = new TarifasAcueducto();
+                this.tarifasAcueducto.CargoFijo = Convert.ToDouble(dr["Cargo_fijo_Acueducto"].ToString());
+                this.tarifasAcueducto.ConsumoBasico = Convert.ToDouble(dr["Consumo_basico_Acueducto"].ToString());
+                this.tarifasAcueducto.ConsumoComplementario = Convert.ToDouble(dr["Consumo_complementario_Acueducto"].ToString());
+                this.tarifasAcueducto.ConsumoSuntuario = Convert.ToDouble(dr["Consumo_suntuario_Acueducto"].ToString());
+
+                // Instancia TarifasAlcantarillado
+                this.tarifasAlcantarillado = new TarifasAlcantarillado();
+                this.tarifasAlcantarillado.CargoFijo = Convert.ToDouble(dr["Cargo_fijo_Alcantarillado"].ToString());
+                this.tarifasAlcantarillado.ConsumoBasico = Convert.ToDouble(dr["Consumo_basico_Alcantarillado"].ToString());
+                this.tarifasAlcantarillado.ConsumoComplementario = Convert.ToDouble(dr["Consumo_complementario_Alcantarillado"].ToString());
+                this.tarifasAlcantarillado.ConsumoSuntuario = Convert.ToDouble(dr["Consumo_suntuario_Alcantarillado"].ToString());
+
+                // Instancia TarifasAseo
+                this.tarifasAseo = new TarifasAseo();
+                this.tarifasAseo.ToneladasPorSuscriptor = Convert.ToDouble(dr["Toneladas_por_suscriptor"].ToString());
+                this.tarifasAseo.BarridoYLimpieza = Convert.ToDouble(dr["Barrido_y_limpieza"].ToString());
+                this.tarifasAseo.LimpiezaUrbana = Convert.ToDouble(dr["Limpieza_urbana"].ToString());
+                this.tarifasAseo.Comercializacion = Convert.ToDouble(dr["Comercializacion"].ToString());
+                this.tarifasAseo.RecoleccionYTransporte = Convert.ToDouble(dr["Recoleccion_y_transporte"].ToString());
+                this.tarifasAseo.DisposicionFinal = Convert.ToDouble(dr["Disposicion_final"].ToString());
+                this.tarifasAseo.TrataminetoDeLixiviados = Convert.ToDouble(dr["Tratamiento_lixiviados"].ToString());
+                this.tarifasAseo.TarifaDeAprovechamiento = Convert.ToDouble(dr["Aprovechamiento"].ToString());
+                this.tarifasAseo.TarifaFinal = Convert.ToDouble(dr["Tarifa_final"].ToString());
+            }
+
+            dr.Close();
+            sb.Clear();
 
             // Query para obtener datos de Factura, Usuario, Acueducto, Alcantarillado, Aseo
             sb.Append("SELECT ");
@@ -96,7 +167,7 @@ namespace aca1
             sb.Append($"WHERE Factura.id = {idFactura};");
 
             // Consulta para generar datos de la factura
-            SqlDataReader dr = conexion.DataReader(sb.ToString());
+            dr = conexion.DataReader(sb.ToString());
 
             // Lectura de datos
             while (dr.Read())
@@ -150,8 +221,6 @@ namespace aca1
             dr.Close();
             sb.Clear();
 
-            // Consulta para obtener valores de tarifas
-
             // Set labels info Usuario
             this.labelIdUsuario.Text = Convert.ToString(this.usuario.IdUsuario);
             this.labelUsuarioNombre.Text = this.usuario.Nombre;
@@ -174,6 +243,16 @@ namespace aca1
             this.labelAcueductoCantidadConsumoBasico.Text = Convert.ToString(this.acueducto.ConsumoBasico);
             this.labelAcueductoCantidadConsumoComplementario.Text = Convert.ToString(this.acueducto.ConsumoComplementario);
             this.labelAcueductoCantidadConsumoSuntuario.Text = Convert.ToString(this.acueducto.ConsumoSuntuario);
+            /*****************Valor Unitario*****************************/
+            this.labelAcueductoVUCargoFijo.Text = Convert.ToString(this.tarifasAcueducto.CargoFijo);
+            this.labelAcueductoVUConsumoBasico.Text = Convert.ToString(this.tarifasAcueducto.ConsumoBasico);
+            this.labelAcueductoVUConsumoComplementario.Text = Convert.ToString(this.tarifasAcueducto.ConsumoComplementario);
+            this.labelAcueductoVUConsumoSuntuario.Text = Convert.ToString(this.tarifasAcueducto.ConsumoSuntuario);
+            /*****************Valor Total*****************************/
+            this.labelAcueductoVTCargoFijo.Text = Convert.ToString(this.acueducto.calcularVT(1, this.tarifasAcueducto.CargoFijo));
+            this.labelAcueductoVTConsumoBasico.Text = Convert.ToString(this.acueducto.calcularVT(this.acueducto.ConsumoBasico, this.tarifasAcueducto.ConsumoBasico));
+            this.labelAcueductoVTConsumoComplementario.Text = Convert.ToString(this.acueducto.calcularVT(this.acueducto.ConsumoComplementario, this.tarifasAcueducto.ConsumoComplementario));
+            this.labelAcueductoVTConsumoSuntuario.Text = Convert.ToString(this.acueducto.calcularVT(this.acueducto.ConsumoSuntuario, this.tarifasAcueducto.ConsumoSuntuario));
 
             // Set labels info Alcantarillado
             /*****************Cantidad*****************************/
@@ -182,6 +261,16 @@ namespace aca1
             this.labelAlcantarilladoCantidadConsumoBasico.Text = Convert.ToString(this.alcantarillado.ConsumoBasico);
             this.labelAlcantarilladoCantidadConsumoComplementario.Text = Convert.ToString(this.alcantarillado.ConsumoComplementario);
             this.labelAlcantarilladoCantidadConsumoSuntuario.Text = Convert.ToString(this.alcantarillado.ConsumoSuntuario);
+            /*****************Valor Unitario*****************************/
+            this.labelAlcantarilladoVUCargoFijo.Text = Convert.ToString(this.tarifasAlcantarillado.CargoFijo);
+            this.labelAlcantarilladoVUConsumoBasico.Text = Convert.ToString(this.tarifasAlcantarillado.ConsumoBasico);
+            this.labelAlcantarilladoVUConsumoComplementario.Text = Convert.ToString(this.tarifasAlcantarillado.ConsumoComplementario);
+            this.labelAlcantarilladoVUConsumoSuntuario.Text = Convert.ToString(this.tarifasAlcantarillado.ConsumoSuntuario);
+            /*****************Valor Total*****************************/
+            this.labelAlcantarilladoVTCargoFijo.Text = Convert.ToString(this.alcantarillado.calcularVT(1, this.tarifasAlcantarillado.CargoFijo));
+            this.labelAlcantarilladoVTConsumoBasico.Text = Convert.ToString(this.alcantarillado.calcularVT(this.alcantarillado.ConsumoBasico, this.tarifasAlcantarillado.ConsumoBasico));
+            this.labelAlcantarilladoVTConsumoComplementario.Text = Convert.ToString(this.alcantarillado.calcularVT(this.alcantarillado.ConsumoComplementario, this.tarifasAlcantarillado.ConsumoComplementario));
+            this.labelAlcantarilladoVTConsumoSuntuario.Text = Convert.ToString(this.alcantarillado.calcularVT(this.alcantarillado.ConsumoSuntuario, this.tarifasAlcantarillado.ConsumoSuntuario));
 
             // Set labels info Aseo
             /*****************Cantidad*****************************/
@@ -194,7 +283,24 @@ namespace aca1
             this.labelAseoCantidadDisposicionFinal.Text = Convert.ToString(this.aseo.DisposicionFinal);
             this.labelAseoCantidadTratamientoLixiviados.Text = Convert.ToString(this.aseo.TrataminetoDeLixiviados);
             this.labelAseoCantidadAprovechamiento.Text = Convert.ToString(this.aseo.TarifaDeAprovechamiento);
-    
+            /*****************Valor Unitario*****************************/
+            this.labelAseoVUToneladasPorSuscriptor.Text = Convert.ToString(this.tarifasAseo.ToneladasPorSuscriptor);
+            this.labelAseoVUBarridoYLimpieza.Text = Convert.ToString(this.tarifasAseo.BarridoYLimpieza);
+            this.labelAseoVULimpiezaUrbana.Text = Convert.ToString(this.tarifasAseo.LimpiezaUrbana);
+            this.labelAseoVUComercializacion.Text = Convert.ToString(this.tarifasAseo.Comercializacion);
+            this.labelAseoVURecoleccionYTransporte.Text = Convert.ToString(this.tarifasAseo.RecoleccionYTransporte);
+            this.labelAseoVUDisposicionFinal.Text = Convert.ToString(this.tarifasAseo.DisposicionFinal);
+            this.labelAseoVUTratamientoLixiviados.Text = Convert.ToString(this.tarifasAseo.TrataminetoDeLixiviados);
+            this.labelAseoVUAprovechamiento.Text = Convert.ToString(this.tarifasAseo.TarifaDeAprovechamiento);
+            /*****************Valor Total*****************************/
+            this.labelAseoVTToneladasPorSuscriptor.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.ToneladasPorSuscriptor, this.tarifasAseo.ToneladasPorSuscriptor));
+            this.labelAseoVTBarridoYLimpieza.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.BarridoYLimpieza, this.tarifasAseo.BarridoYLimpieza));
+            this.labelAseoVTLimpiezaUrbana.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.LimpiezaUrbana, this.tarifasAseo.LimpiezaUrbana));
+            this.labelAseoVTComercializacion.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.Comercializacion, this.tarifasAseo.Comercializacion));
+            this.labelAseoVTRecoleccionYTransporte.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.RecoleccionYTransporte, this.tarifasAseo.RecoleccionYTransporte));
+            this.labelAseoVTDisposicionFinal.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.DisposicionFinal, this.tarifasAseo.DisposicionFinal));
+            this.labelAseoVTTratamientoLixiviados.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.TrataminetoDeLixiviados, this.tarifasAseo.TrataminetoDeLixiviados));
+            this.labelAseoVTAprovechamiento.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.TarifaDeAprovechamiento, this.tarifasAseo.TarifaDeAprovechamiento));
 
         }
 

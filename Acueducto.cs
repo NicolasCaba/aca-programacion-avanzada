@@ -22,6 +22,11 @@ namespace aca1
         public double ConsumoSuntuario { get { return consumoSuntuario; } set { this.consumoSuntuario = value; } }
         public double Total { get { return total; } set { this.total = value; } }
 
+        public double calcularVT(double consumo, double tarifa)
+        {
+            return consumo * tarifa;
+        }
+
         public double calcularCargoFijo(double porcentajesubsidio, double porcentajecontribucion)
         {
             double valorSubsidio = (this.cargoFijo * porcentajesubsidio) / 100;

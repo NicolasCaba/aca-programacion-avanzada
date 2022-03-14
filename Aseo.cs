@@ -30,6 +30,11 @@ namespace aca1
         public double TarifaDeAprovechamiento { get { return tarifaDeAprovechamiento; } set { this.tarifaDeAprovechamiento = value; } }
         public double Total { get { return total; } set { this.total = value; } }
 
+        public double calcularVT(double consumo, double tarifa)
+        {
+            return consumo * tarifa;
+        }
+
         public double calcular (string tipo, double tarifa, double porcentajeSubsidio, double porcentajeContribucion)
         {
             double valor = 0;
