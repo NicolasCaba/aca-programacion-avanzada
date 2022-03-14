@@ -14,6 +14,13 @@ namespace aca1
     public partial class FormFactura : Form
     {
         int idFactura;
+        Factura factura;
+        Usuario usuario;
+        Acueducto acueducto;
+        Alcantarillado alcantarillado;
+        Aseo aseo;
+        int porcentajeContribucion;
+        int porcentajeSubsidio;
         public FormFactura(int idFactura)
         {
             InitializeComponent();
@@ -86,7 +93,7 @@ namespace aca1
             sb.Append("LEFT JOIN Tarifas_acueducto ON Estrato.id = Tarifas_acueducto.idEstrato ");
             sb.Append("LEFT JOIN Tarifas_alcantarillado ON Estrato.id = Tarifas_alcantarillado.idEstrato ");
             /*****************************************/
-            sb.Append($"WHERE Factura.id {idFactura};");
+            sb.Append($"WHERE Factura.id = {idFactura};");
 
             // Consulta para generar datos de la factura
             SqlDataReader dr = conexion.DataReader(sb.ToString());
@@ -95,35 +102,62 @@ namespace aca1
             while (dr.Read())
             {
                 // Instancia Clase Usuario
-                Usuario usuario = new Usuario();
-                usuario.IdUsuario = Convert.ToInt32(dr["idUsuario"].ToString());
-                usuario.Nombre = $"{ dr["Primer_nombre"].ToString() } { dr["Segundo_nombre"].ToString() } { dr["Primer_apellido"].ToString() } { dr["Segundo_apellido"].ToString() }";
-                usuario.Estrato = Convert.ToInt32( dr["Estrato"].ToString() );
-                usuario.ClaseDeUso = dr["Clase_uso"].ToString();
-                usuario.Direccion = dr["Direccion"].ToString();
+                this.usuario = new Usuario();
+                this.usuario.IdUsuario = Convert.ToInt32(dr["idUsuario"].ToString());
+                this.usuario.Nombre = $"{ dr["Primer_nombre"].ToString() } { dr["Segundo_nombre"].ToString() } { dr["Primer_apellido"].ToString() } { dr["Segundo_apellido"].ToString() }";
+                this.usuario.Estrato = Convert.ToInt32( dr["Estrato"].ToString() );
+                this.usuario.ClaseDeUso = dr["Clase_uso"].ToString();
+                this.usuario.Direccion = dr["Direccion"].ToString();
 
                 // Instancia Clase Acueducto
-                Acueducto acueducto = new Acueducto();
-                acueducto.IdAcueducto = Convert.ToInt32(dr["idAcueducto"].ToString());
-                acueducto.CargoFijo = Convert.ToDouble( dr["Cargo_fijo_Acueducto"].ToString() );
-                acueducto.ConsumoBasico = Convert.ToInt32( dr["Consumo_basico_Acueducto"].ToString() );
-                acueducto.ConsumoComplementario = Convert.ToInt32( dr["Consumo_complementario_Acueducto"].ToString() );
-                acueducto.ConsumoSuntuario = Convert.ToInt32( dr["Consumo_suntuario_Acueducto"].ToString() );
+                this.acueducto = new Acueducto();
+                this.acueducto.IdAcueducto = Convert.ToInt32(dr["idAcueducto"].ToString());
+                this.acueducto.CargoFijo = Convert.ToDouble( dr["Cargo_fijo_Acueducto"].ToString() );
+                this.acueducto.ConsumoBasico = Convert.ToDouble( dr["Consumo_basico_Acueducto"].ToString() );
+                this.acueducto.ConsumoComplementario = Convert.ToDouble( dr["Consumo_complementario_Acueducto"].ToString() );
+                this.acueducto.ConsumoSuntuario = Convert.ToDouble( dr["Consumo_suntuario_Acueducto"].ToString() );
 
                 // Instancia Clase Alcantarillado
-                Alcantarillado alcantarillado = new Alcantarillado();
-                alcantarillado.IdAlcantarillado = Convert.ToInt32(dr["idAlcantarillado"].ToString());
-                alcantarillado.CargoFijo = Convert.ToDouble(dr["Cargo_fijo_Alcantarillado"].ToString());
-                alcantarillado.ConsumoBasico = Convert.ToInt32(dr["Consumo_basico_Alcantarillado"].ToString());
-                alcantarillado.ConsumoComplementario = Convert.ToInt32(dr["Consumo_complementario_Alcantarillado"].ToString());
-                alcantarillado.ConsumoSuntuario = Convert.ToInt32(dr["Consumo_suntuario_Alcantarillado"].ToString());
+                this.alcantarillado = new Alcantarillado();
+                this.alcantarillado.IdAlcantarillado = Convert.ToInt32(dr["idAlcantarillado"].ToString());
+                this.alcantarillado.CargoFijo = Convert.ToDouble(dr["Cargo_fijo_Alcantarillado"].ToString());
+                this.alcantarillado.ConsumoBasico = Convert.ToDouble(dr["Consumo_basico_Alcantarillado"].ToString());
+                this.alcantarillado.ConsumoComplementario = Convert.ToDouble(dr["Consumo_complementario_Alcantarillado"].ToString());
+                this.alcantarillado.ConsumoSuntuario = Convert.ToDouble(dr["Consumo_suntuario_Alcantarillado"].ToString());
 
                 // Instancio Clase Aseo
-                Aseo aseo = new Aseo();
+                this.aseo = new Aseo();
+                this.aseo.ToneladasPorSuscriptor = Convert.ToDouble(dr["Toneladas_por_suscriptor"].ToString());
+                this.aseo.BarridoYLimpieza = Convert.ToDouble(dr["Barrido_y_limpieza"].ToString());
+                this.aseo.LimpiezaUrbana = Convert.ToDouble(dr["Limpieza_urbana"].ToString());
+                this.aseo.Comercializacion = Convert.ToDouble(dr["Comercializacion"].ToString());
+                this.aseo.RecoleccionYTransporte = Convert.ToDouble(dr["Recoleccion_y_transporte"].ToString());
+                this.aseo.DisposicionFinal = Convert.ToDouble(dr["Disposicion_final"].ToString());
+                this.aseo.TrataminetoDeLixiviados = Convert.ToDouble(dr["Tratamiento_lixiviados"].ToString());
+                this.aseo.TarifaDeAprovechamiento = Convert.ToDouble(dr["Aprovechamiento"].ToString());
 
+                // Porcentajes de subsidio y contribucion
+                this.porcentajeContribucion = Convert.ToInt32(dr["Porcentaje_contribucion"].ToString());
+                this.porcentajeSubsidio = Convert.ToInt32(dr["Porcentaje_subsidio"].ToString());
 
-                //Factura factura = new Factura();
+                // Instancia Clase Factura
+                DateTime fechaPagoOportuno = Convert.ToDateTime(dr["Fecha_pago"].ToString());
+                DateTime fechaTomo = Convert.ToDateTime(dr["Fecha_tomo"].ToString());
+                this.factura = new Factura(usuario, acueducto, alcantarillado, aseo, fechaPagoOportuno, fechaTomo);
             }
+
+            dr.Close();
+
+            // Set labels info Usuario
+            this.labelIdUsuario.Text = Convert.ToString(this.usuario.IdUsuario);
+            this.labelUsuarioNombre.Text = this.usuario.Nombre;
+            this.labelUsuarioEstrato.Text = Convert.ToString(this.usuario.Estrato);
+            this.labelUsuarioDireccion.Text = this.usuario.Direccion;
+            this.labelUsuarioClaseUso.Text = this.usuario.ClaseDeUso;
+
+            // Set labels info subsudio contribucion
+            this.labelPorcentajeContribucion.Text = $"{this.porcentajeContribucion}%";
+            this.labelPorcentajeSubsidio.Text = $"{this.porcentajeSubsidio}%";
 
         }
 

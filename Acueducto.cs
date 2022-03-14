@@ -10,16 +10,16 @@ namespace aca1
     {
         private int idAcueducto;
         private double cargoFijo;
-        private int consumoBasico;
-        private int consumoComplementario;
-        private int consumoSuntuario;
+        private double consumoBasico;
+        private double consumoComplementario;
+        private double consumoSuntuario;
         private double total;
 
         public int IdAcueducto { get { return idAcueducto; } set { this.idAcueducto = value; } }
         public double CargoFijo { get { return cargoFijo; } set { this.cargoFijo = value; } }
-        public int ConsumoBasico { get { return consumoBasico; } set { this.consumoBasico = value; } }
-        public int ConsumoComplementario { get { return consumoComplementario; } set { this.consumoComplementario = value; } }
-        public int ConsumoSuntuario { get { return consumoSuntuario; } set { this.consumoSuntuario = value; } }
+        public double ConsumoBasico { get { return consumoBasico; } set { this.consumoBasico = value; } }
+        public double ConsumoComplementario { get { return consumoComplementario; } set { this.consumoComplementario = value; } }
+        public double ConsumoSuntuario { get { return consumoSuntuario; } set { this.consumoSuntuario = value; } }
         public double Total { get { return total; } set { this.total = value; } }
 
         public double calcularCargoFijo(double porcentajesubsidio, double porcentajecontribucion)

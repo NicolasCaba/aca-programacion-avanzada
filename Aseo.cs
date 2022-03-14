@@ -10,6 +10,7 @@ namespace aca1
     {
         private double toneladasPorSuscriptor;
         private double barridoYLimpieza;
+        private double limpiezaUrbana;
         private double comercializacion;
         private double recoleccionYTransporte;
         private double disposicionFinal;
@@ -19,6 +20,7 @@ namespace aca1
 
         public double ToneladasPorSuscriptor { get { return toneladasPorSuscriptor; } set { this.toneladasPorSuscriptor = value; } }
         public double BarridoYLimpieza { get { return barridoYLimpieza; } set { this.barridoYLimpieza = value; } }
+        public double LimpiezaUrbana { get { return limpiezaUrbana; } set { this.limpiezaUrbana = value; } }
         public double Comercializacion { get { return comercializacion; } set { this.comercializacion = value; } }
         public double RecoleccionYTransporte { get { return recoleccionYTransporte; } set { this.recoleccionYTransporte = value; } }
         public double DisposicionFinal { get { return disposicionFinal; } set { this.disposicionFinal = value; } }
