@@ -35,6 +35,22 @@ namespace aca1
             return consumo * tarifa;
         }
 
+        public double calcularValorPorcentaje(double valor, int porcentajesubsidio, int porcentajecontribucion)
+        {
+            if (porcentajecontribucion != 0)
+            {
+                return (valor * porcentajecontribucion) / 100;
+            }
+            else if (porcentajesubsidio != 0)
+            {
+                return (valor * porcentajesubsidio) / 100;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
         public double calcular (string tipo, double tarifa, double porcentajeSubsidio, double porcentajeContribucion)
         {
             double valor = 0;

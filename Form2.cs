@@ -249,10 +249,32 @@ namespace aca1
             this.labelAcueductoVUConsumoComplementario.Text = Convert.ToString(this.tarifasAcueducto.ConsumoComplementario);
             this.labelAcueductoVUConsumoSuntuario.Text = Convert.ToString(this.tarifasAcueducto.ConsumoSuntuario);
             /*****************Valor Total*****************************/
-            this.labelAcueductoVTCargoFijo.Text = Convert.ToString(this.acueducto.calcularVT(1, this.tarifasAcueducto.CargoFijo));
-            this.labelAcueductoVTConsumoBasico.Text = Convert.ToString(this.acueducto.calcularVT(this.acueducto.ConsumoBasico, this.tarifasAcueducto.ConsumoBasico));
-            this.labelAcueductoVTConsumoComplementario.Text = Convert.ToString(this.acueducto.calcularVT(this.acueducto.ConsumoComplementario, this.tarifasAcueducto.ConsumoComplementario));
-            this.labelAcueductoVTConsumoSuntuario.Text = Convert.ToString(this.acueducto.calcularVT(this.acueducto.ConsumoSuntuario, this.tarifasAcueducto.ConsumoSuntuario));
+            double valorTotalCargoFijoAceuducto = this.acueducto.calcularVT(1, this.tarifasAcueducto.CargoFijo);
+            double valorTotalConsumoBasicoAceuducto = this.acueducto.calcularVT(this.acueducto.ConsumoBasico, this.tarifasAcueducto.ConsumoBasico);
+            double valorTotalConsumoComplementarioAceuducto = this.acueducto.calcularVT(this.acueducto.ConsumoComplementario, this.tarifasAcueducto.ConsumoComplementario);
+            double valorTotalConsumoSuntuarioAceuducto = this.acueducto.calcularVT(this.acueducto.ConsumoSuntuario, this.tarifasAcueducto.ConsumoSuntuario);
+            this.labelAcueductoVTCargoFijo.Text = Convert.ToString(valorTotalCargoFijoAceuducto);
+            this.labelAcueductoVTConsumoBasico.Text = Convert.ToString(valorTotalConsumoBasicoAceuducto);
+            this.labelAcueductoVTConsumoComplementario.Text = Convert.ToString(valorTotalConsumoComplementarioAceuducto);
+            this.labelAcueductoVTConsumoSuntuario.Text = Convert.ToString(valorTotalConsumoSuntuarioAceuducto);
+            /*****************Subsidio Contribucion*****************************/
+            string caracter;
+            if(this.usuario.Estrato < 3)
+            {
+                caracter = "-";
+            } else if (this.usuario.Estrato > 3)
+            {
+                caracter = "+";
+            } else
+            {
+                caracter = "~";
+            }
+
+            this.labelAcueductoSCCargoFijo.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalCargoFijoAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAcueductoSCConsumoBasico.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalConsumoBasicoAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAcueductoSCConsumoComplementario.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalConsumoComplementarioAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAcueductoSCConsumoSuntuario.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalConsumoSuntuarioAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
+             
 
             // Set labels info Alcantarillado
             /*****************Cantidad*****************************/
@@ -267,10 +289,21 @@ namespace aca1
             this.labelAlcantarilladoVUConsumoComplementario.Text = Convert.ToString(this.tarifasAlcantarillado.ConsumoComplementario);
             this.labelAlcantarilladoVUConsumoSuntuario.Text = Convert.ToString(this.tarifasAlcantarillado.ConsumoSuntuario);
             /*****************Valor Total*****************************/
-            this.labelAlcantarilladoVTCargoFijo.Text = Convert.ToString(this.alcantarillado.calcularVT(1, this.tarifasAlcantarillado.CargoFijo));
-            this.labelAlcantarilladoVTConsumoBasico.Text = Convert.ToString(this.alcantarillado.calcularVT(this.alcantarillado.ConsumoBasico, this.tarifasAlcantarillado.ConsumoBasico));
-            this.labelAlcantarilladoVTConsumoComplementario.Text = Convert.ToString(this.alcantarillado.calcularVT(this.alcantarillado.ConsumoComplementario, this.tarifasAlcantarillado.ConsumoComplementario));
-            this.labelAlcantarilladoVTConsumoSuntuario.Text = Convert.ToString(this.alcantarillado.calcularVT(this.alcantarillado.ConsumoSuntuario, this.tarifasAlcantarillado.ConsumoSuntuario));
+            double valorTotalCargoFijoAlcantarillado = this.alcantarillado.calcularVT(1, this.tarifasAlcantarillado.CargoFijo);
+            double valorTotalConsumoBasicoAlcantarillado = this.alcantarillado.calcularVT(this.alcantarillado.ConsumoBasico, this.tarifasAlcantarillado.ConsumoBasico);
+            double valorTotalConsumoComplementarioAlcantarillado = this.alcantarillado.calcularVT(this.alcantarillado.ConsumoComplementario, this.tarifasAlcantarillado.ConsumoComplementario);
+            double valorTotalConsumoSuntuarioAlcantarillado = this.alcantarillado.calcularVT(this.alcantarillado.ConsumoSuntuario, this.tarifasAlcantarillado.ConsumoSuntuario);
+            this.labelAlcantarilladoVTCargoFijo.Text = Convert.ToString(valorTotalCargoFijoAlcantarillado);
+            this.labelAlcantarilladoVTConsumoBasico.Text = Convert.ToString(valorTotalConsumoBasicoAlcantarillado);
+            this.labelAlcantarilladoVTConsumoComplementario.Text = Convert.ToString(valorTotalConsumoComplementarioAlcantarillado);
+            this.labelAlcantarilladoVTConsumoSuntuario.Text = Convert.ToString(valorTotalConsumoSuntuarioAlcantarillado);
+            /*****************Subsidio Contribucion*****************************/
+            this.labelAlcantarilladoSCCargoFijo.Text = $"{caracter}{this.alcantarillado.calcularValorPorcentaje(valorTotalCargoFijoAlcantarillado, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAlcantarilladoSCConsumoBasico.Text = $"{caracter}{this.alcantarillado.calcularValorPorcentaje(valorTotalConsumoBasicoAlcantarillado, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAlcantarilladoSCConsumoComplementario.Text = $"{caracter}{this.alcantarillado.calcularValorPorcentaje(valorTotalConsumoComplementarioAlcantarillado, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAlcantarilladoSCConsumoSuntuario.Text = $"{caracter}{this.alcantarillado.calcularValorPorcentaje(valorTotalConsumoSuntuarioAlcantarillado, porcentajeSubsidio, porcentajeContribucion)}";
+
+
 
             // Set labels info Aseo
             /*****************Cantidad*****************************/
@@ -293,14 +326,32 @@ namespace aca1
             this.labelAseoVUTratamientoLixiviados.Text = Convert.ToString(this.tarifasAseo.TrataminetoDeLixiviados);
             this.labelAseoVUAprovechamiento.Text = Convert.ToString(this.tarifasAseo.TarifaDeAprovechamiento);
             /*****************Valor Total*****************************/
-            this.labelAseoVTToneladasPorSuscriptor.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.ToneladasPorSuscriptor, this.tarifasAseo.ToneladasPorSuscriptor));
-            this.labelAseoVTBarridoYLimpieza.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.BarridoYLimpieza, this.tarifasAseo.BarridoYLimpieza));
-            this.labelAseoVTLimpiezaUrbana.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.LimpiezaUrbana, this.tarifasAseo.LimpiezaUrbana));
-            this.labelAseoVTComercializacion.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.Comercializacion, this.tarifasAseo.Comercializacion));
-            this.labelAseoVTRecoleccionYTransporte.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.RecoleccionYTransporte, this.tarifasAseo.RecoleccionYTransporte));
-            this.labelAseoVTDisposicionFinal.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.DisposicionFinal, this.tarifasAseo.DisposicionFinal));
-            this.labelAseoVTTratamientoLixiviados.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.TrataminetoDeLixiviados, this.tarifasAseo.TrataminetoDeLixiviados));
-            this.labelAseoVTAprovechamiento.Text = Convert.ToString(this.aseo.calcularVT(this.aseo.TarifaDeAprovechamiento, this.tarifasAseo.TarifaDeAprovechamiento));
+            double valorTotalToneladasPorSuscriptor = this.aseo.calcularVT(this.aseo.ToneladasPorSuscriptor, this.tarifasAseo.ToneladasPorSuscriptor);
+            double valorTotalBarridoYLimpieza = this.aseo.calcularVT(this.aseo.BarridoYLimpieza, this.tarifasAseo.BarridoYLimpieza);
+            double valorTotalLimpiezaUrbana = this.aseo.calcularVT(this.aseo.LimpiezaUrbana, this.tarifasAseo.LimpiezaUrbana);
+            double valorTotalComercializacion = this.aseo.calcularVT(this.aseo.Comercializacion, this.tarifasAseo.Comercializacion);
+            double valorTotalRecoleccionYTransporte = this.aseo.calcularVT(this.aseo.RecoleccionYTransporte, this.tarifasAseo.RecoleccionYTransporte);
+            double valorTotalDisposicionFinal = this.aseo.calcularVT(this.aseo.DisposicionFinal, this.tarifasAseo.DisposicionFinal);
+            double valorTotalTratamientoLixiviados = this.aseo.calcularVT(this.aseo.TrataminetoDeLixiviados, this.tarifasAseo.TrataminetoDeLixiviados);
+            double valorTotalAprovechamiento = this.aseo.calcularVT(this.aseo.TarifaDeAprovechamiento, this.tarifasAseo.TarifaDeAprovechamiento);
+            this.labelAseoVTToneladasPorSuscriptor.Text = Convert.ToString(valorTotalToneladasPorSuscriptor);
+            this.labelAseoVTBarridoYLimpieza.Text = Convert.ToString(valorTotalBarridoYLimpieza);
+            this.labelAseoVTLimpiezaUrbana.Text = Convert.ToString(valorTotalLimpiezaUrbana);
+            this.labelAseoVTComercializacion.Text = Convert.ToString(valorTotalComercializacion);
+            this.labelAseoVTRecoleccionYTransporte.Text = Convert.ToString(valorTotalRecoleccionYTransporte);
+            this.labelAseoVTDisposicionFinal.Text = Convert.ToString(valorTotalDisposicionFinal);
+            this.labelAseoVTTratamientoLixiviados.Text = Convert.ToString(valorTotalTratamientoLixiviados);
+            this.labelAseoVTAprovechamiento.Text = Convert.ToString(valorTotalAprovechamiento);
+            /*****************Subsidio Contribucion*****************************/
+            this.labelAseoSCToneladasPorSuscriptor.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalToneladasPorSuscriptor, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAseoSCBarridoYLimpieza.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalBarridoYLimpieza, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAseoSCLimpiezaUrbana.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalLimpiezaUrbana, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAseoSCComercializacion.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalComercializacion, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAseoSCRecoleccionYTransporte.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalRecoleccionYTransporte, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAseoSCDisposicionFinal.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalDisposicionFinal, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAseoSCTratamientoLixiviados.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalTratamientoLixiviados, porcentajeSubsidio, porcentajeContribucion)}";
+            this.labelAseoSCAprovechamiento.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalAprovechamiento, porcentajeSubsidio, porcentajeContribucion)}";
+
 
         }
 

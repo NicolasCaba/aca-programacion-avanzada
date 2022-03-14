@@ -27,11 +27,25 @@ namespace aca1
             return consumo * tarifa;
         }
 
-        public double calcularCargoFijo(double porcentajesubsidio, double porcentajecontribucion)
+        public double calcularValorPorcentaje(double valor, int porcentajesubsidio, int porcentajecontribucion)
         {
-            double valorSubsidio = (this.cargoFijo * porcentajesubsidio) / 100;
-            double valorContribucion = (this.cargoFijo * porcentajecontribucion) / 100;
-            double totalCargoFijo = this.cargoFijo - valorSubsidio + valorContribucion;
+            if(porcentajecontribucion != 0)
+            {
+                return (valor * porcentajecontribucion) / 100;
+            } else if (porcentajesubsidio != 0)
+            {
+                return (valor * porcentajesubsidio) / 100;
+            } else
+            {
+                return 0;
+            }
+        }
+
+        public double calcularCargoFijo(double cargo, double porcentajesubsidio, double porcentajecontribucion)
+        {
+            double valorSubsidio = (cargo * porcentajesubsidio) / 100;
+            double valorContribucion = (cargo * porcentajecontribucion) / 100;
+            double totalCargoFijo = cargo - valorSubsidio + valorContribucion;
 
             return totalCargoFijo;
         }

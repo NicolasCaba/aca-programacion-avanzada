@@ -27,6 +27,23 @@ namespace aca1
         {
             return consumo * tarifa;
         }
+
+        public double calcularValorPorcentaje(double valor, int porcentajesubsidio, int porcentajecontribucion)
+        {
+            if (porcentajecontribucion != 0)
+            {
+                return (valor * porcentajecontribucion) / 100;
+            }
+            else if (porcentajesubsidio != 0)
+            {
+                return (valor * porcentajesubsidio) / 100;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
         public double calcularCargoFijo ( double porcentajesubsidio, double porcentajecontribucion)
         {
             double valorSubsidio = (this.cargoFijo * porcentajesubsidio) / 100;
