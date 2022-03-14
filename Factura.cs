@@ -14,6 +14,7 @@ namespace aca1
         private Aseo aseo;
         private DateTime fechaTomo;
         private DateTime fechaPagoOportuno;
+        private decimal totalAPagar;
 
         public Factura (Usuario usuario, Acueducto acueducto, Alcantarillado alcantarillado, Aseo aseo, DateTime fechaPagoOportuno, DateTime fechaTomo)
         {
@@ -24,5 +25,9 @@ namespace aca1
             this.fechaTomo = fechaTomo;
             this.fechaPagoOportuno = fechaPagoOportuno;
         }
+
+        public DateTime FechaTomo { get { return this.fechaTomo; } set { this.fechaTomo = value; } }
+        public DateTime FechaPagoOportuno { get { return this.fechaPagoOportuno; } set { this.fechaPagoOportuno = value; } }
+        public decimal TotalAPagar { get { return this.totalAPagar; } set { this.totalAPagar = value; } }
     }
 }

@@ -127,6 +127,7 @@ namespace aca1
 
                 // Instancio Clase Aseo
                 this.aseo = new Aseo();
+                this.aseo.IdAseo = Convert.ToInt32(dr["idAseo"].ToString());
                 this.aseo.ToneladasPorSuscriptor = Convert.ToDouble(dr["Toneladas_por_suscriptor"].ToString());
                 this.aseo.BarridoYLimpieza = Convert.ToDouble(dr["Barrido_y_limpieza"].ToString());
                 this.aseo.LimpiezaUrbana = Convert.ToDouble(dr["Limpieza_urbana"].ToString());
@@ -147,6 +148,9 @@ namespace aca1
             }
 
             dr.Close();
+            sb.Clear();
+
+            // Consulta para obtener valores de tarifas
 
             // Set labels info Usuario
             this.labelIdUsuario.Text = Convert.ToString(this.usuario.IdUsuario);
@@ -158,6 +162,39 @@ namespace aca1
             // Set labels info subsudio contribucion
             this.labelPorcentajeContribucion.Text = $"{this.porcentajeContribucion}%";
             this.labelPorcentajeSubsidio.Text = $"{this.porcentajeSubsidio}%";
+
+            // Set labels info Factura
+            this.labelFacturaFechaTomo.Text = this.factura.FechaTomo.Date.ToShortDateString();
+            this.labelFacturaFechaPago.Text = this.factura.FechaPagoOportuno.Date.ToShortDateString();
+
+            // Set labels info Acueducto
+            /*****************Cantidad*****************************/
+            this.labelIdAcueducto.Text = Convert.ToString(this.acueducto.IdAcueducto);
+            this.labelAcueductoCantidadCargoFijo.Text = "1";
+            this.labelAcueductoCantidadConsumoBasico.Text = Convert.ToString(this.acueducto.ConsumoBasico);
+            this.labelAcueductoCantidadConsumoComplementario.Text = Convert.ToString(this.acueducto.ConsumoComplementario);
+            this.labelAcueductoCantidadConsumoSuntuario.Text = Convert.ToString(this.acueducto.ConsumoSuntuario);
+
+            // Set labels info Alcantarillado
+            /*****************Cantidad*****************************/
+            this.labelIdAlcantarillado.Text = Convert.ToString(this.alcantarillado.IdAlcantarillado);
+            this.labelAlcantarilladoCantidadCargoFijo.Text = "1";
+            this.labelAlcantarilladoCantidadConsumoBasico.Text = Convert.ToString(this.alcantarillado.ConsumoBasico);
+            this.labelAlcantarilladoCantidadConsumoComplementario.Text = Convert.ToString(this.alcantarillado.ConsumoComplementario);
+            this.labelAlcantarilladoCantidadConsumoSuntuario.Text = Convert.ToString(this.alcantarillado.ConsumoSuntuario);
+
+            // Set labels info Aseo
+            /*****************Cantidad*****************************/
+            this.labelIdAseo.Text = Convert.ToString(this.aseo.IdAseo);
+            this.labelAseoCantidadToneladasPorSuscriptor.Text = Convert.ToString(this.aseo.ToneladasPorSuscriptor);
+            this.labelAseoCantidadBarridoYLimpieza.Text = Convert.ToString(this.aseo.BarridoYLimpieza);
+            this.labelAseoCantidadLimpiezaUrbana.Text = Convert.ToString(this.aseo.LimpiezaUrbana);
+            this.labelAseoCantidadComercializacion.Text = Convert.ToString(this.aseo.Comercializacion);
+            this.labelAseoCantidadRecoleccionYTransporte.Text = Convert.ToString(this.aseo.RecoleccionYTransporte);
+            this.labelAseoCantidadDisposicionFinal.Text = Convert.ToString(this.aseo.DisposicionFinal);
+            this.labelAseoCantidadTratamientoLixiviados.Text = Convert.ToString(this.aseo.TrataminetoDeLixiviados);
+            this.labelAseoCantidadAprovechamiento.Text = Convert.ToString(this.aseo.TarifaDeAprovechamiento);
+    
 
         }
 

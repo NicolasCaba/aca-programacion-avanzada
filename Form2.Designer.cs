@@ -95,7 +95,6 @@ namespace aca1
             this.labelAcueductoVUConsumoBasico = new System.Windows.Forms.Label();
             this.labelAcueductoVUCargoFijo = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.labelAcueductoCantidadSubtotal = new System.Windows.Forms.Label();
             this.labelAcueductoCantidadConsumoSuntuario = new System.Windows.Forms.Label();
             this.labelAcueductoCantidadConsumoComplementario = new System.Windows.Forms.Label();
             this.labelAcueductoCantidadConsumoBasico = new System.Windows.Forms.Label();
@@ -148,7 +147,6 @@ namespace aca1
             this.labelAlcantarilladoVUConsumoBasico = new System.Windows.Forms.Label();
             this.labelAlcantarilladoVUCargoFijo = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
-            this.labelAlcantarilladoCantidadSubtotal = new System.Windows.Forms.Label();
             this.labelAlcantarilladoCantidadConsumoSuntuario = new System.Windows.Forms.Label();
             this.labelAlcantarilladoCantidadConsumoComplementario = new System.Windows.Forms.Label();
             this.labelAlcantarilladoCantidadConsumoBasico = new System.Windows.Forms.Label();
@@ -221,7 +219,6 @@ namespace aca1
             this.labelAseoVUBarridoYLimpieza = new System.Windows.Forms.Label();
             this.labelAseoVUToneladasPorSuscriptor = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
-            this.labelAseoCantidadSubtotal = new System.Windows.Forms.Label();
             this.labelAseoCantidadAprovechamiento = new System.Windows.Forms.Label();
             this.labelAseoCantidadTratamientoLixiviados = new System.Windows.Forms.Label();
             this.labelAseoCantidadDisposicionFinal = new System.Windows.Forms.Label();
@@ -981,7 +978,6 @@ namespace aca1
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.labelAcueductoCantidadSubtotal);
             this.panel10.Controls.Add(this.labelAcueductoCantidadConsumoSuntuario);
             this.panel10.Controls.Add(this.labelAcueductoCantidadConsumoComplementario);
             this.panel10.Controls.Add(this.labelAcueductoCantidadConsumoBasico);
@@ -990,16 +986,6 @@ namespace aca1
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(73, 170);
             this.panel10.TabIndex = 0;
-            // 
-            // labelAcueductoCantidadSubtotal
-            // 
-            this.labelAcueductoCantidadSubtotal.AutoSize = true;
-            this.labelAcueductoCantidadSubtotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAcueductoCantidadSubtotal.Location = new System.Drawing.Point(21, 139);
-            this.labelAcueductoCantidadSubtotal.Name = "labelAcueductoCantidadSubtotal";
-            this.labelAcueductoCantidadSubtotal.Size = new System.Drawing.Size(15, 17);
-            this.labelAcueductoCantidadSubtotal.TabIndex = 14;
-            this.labelAcueductoCantidadSubtotal.Text = "0";
             // 
             // labelAcueductoCantidadConsumoSuntuario
             // 
@@ -1538,7 +1524,6 @@ namespace aca1
             // panel33
             // 
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.labelAlcantarilladoCantidadSubtotal);
             this.panel33.Controls.Add(this.labelAlcantarilladoCantidadConsumoSuntuario);
             this.panel33.Controls.Add(this.labelAlcantarilladoCantidadConsumoComplementario);
             this.panel33.Controls.Add(this.labelAlcantarilladoCantidadConsumoBasico);
@@ -1547,16 +1532,6 @@ namespace aca1
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(73, 170);
             this.panel33.TabIndex = 0;
-            // 
-            // labelAlcantarilladoCantidadSubtotal
-            // 
-            this.labelAlcantarilladoCantidadSubtotal.AutoSize = true;
-            this.labelAlcantarilladoCantidadSubtotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAlcantarilladoCantidadSubtotal.Location = new System.Drawing.Point(21, 139);
-            this.labelAlcantarilladoCantidadSubtotal.Name = "labelAlcantarilladoCantidadSubtotal";
-            this.labelAlcantarilladoCantidadSubtotal.Size = new System.Drawing.Size(15, 17);
-            this.labelAlcantarilladoCantidadSubtotal.TabIndex = 14;
-            this.labelAlcantarilladoCantidadSubtotal.Text = "0";
             // 
             // labelAlcantarilladoCantidadConsumoSuntuario
             // 
@@ -2315,7 +2290,6 @@ namespace aca1
             // panel48
             // 
             this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel48.Controls.Add(this.labelAseoCantidadSubtotal);
             this.panel48.Controls.Add(this.labelAseoCantidadAprovechamiento);
             this.panel48.Controls.Add(this.labelAseoCantidadTratamientoLixiviados);
             this.panel48.Controls.Add(this.labelAseoCantidadDisposicionFinal);
@@ -2328,16 +2302,6 @@ namespace aca1
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(73, 307);
             this.panel48.TabIndex = 0;
-            // 
-            // labelAseoCantidadSubtotal
-            // 
-            this.labelAseoCantidadSubtotal.AutoSize = true;
-            this.labelAseoCantidadSubtotal.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAseoCantidadSubtotal.Location = new System.Drawing.Point(21, 273);
-            this.labelAseoCantidadSubtotal.Name = "labelAseoCantidadSubtotal";
-            this.labelAseoCantidadSubtotal.Size = new System.Drawing.Size(15, 17);
-            this.labelAseoCantidadSubtotal.TabIndex = 28;
-            this.labelAseoCantidadSubtotal.Text = "0";
             // 
             // labelAseoCantidadAprovechamiento
             // 
@@ -2736,7 +2700,6 @@ namespace aca1
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label labelAcueductoVUConsumoBasico;
         private System.Windows.Forms.Label labelAcueductoVUCargoFijo;
-        private System.Windows.Forms.Label labelAcueductoCantidadSubtotal;
         private System.Windows.Forms.Label labelAcueductoCantidadConsumoSuntuario;
         private System.Windows.Forms.Label labelAcueductoCantidadConsumoComplementario;
         private System.Windows.Forms.Label labelAcueductoSCConsumoSuntuario;
@@ -2795,7 +2758,6 @@ namespace aca1
         private System.Windows.Forms.Label labelAlcantarilladoVUConsumoBasico;
         private System.Windows.Forms.Label labelAlcantarilladoVUCargoFijo;
         private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.Label labelAlcantarilladoCantidadSubtotal;
         private System.Windows.Forms.Label labelAlcantarilladoCantidadConsumoSuntuario;
         private System.Windows.Forms.Label labelAlcantarilladoCantidadConsumoComplementario;
         private System.Windows.Forms.Label labelAlcantarilladoCantidadConsumoBasico;
@@ -2884,7 +2846,6 @@ namespace aca1
         private System.Windows.Forms.Label labelAseoCantidadAprovechamiento;
         private System.Windows.Forms.Label labelAseoCantidadTratamientoLixiviados;
         private System.Windows.Forms.Label labelAseoCantidadDisposicionFinal;
-        private System.Windows.Forms.Label labelAseoCantidadSubtotal;
         private System.Windows.Forms.Panel panel49;
         private System.Windows.Forms.Label labelPorcentajeContribucion;
         private System.Windows.Forms.Label labelPorcentajeSubsidio;

@@ -8,6 +8,7 @@ namespace aca1
 {
     public class Aseo
     {
+        private int idAseo;
         private double toneladasPorSuscriptor;
         private double barridoYLimpieza;
         private double limpiezaUrbana;
@@ -18,6 +19,7 @@ namespace aca1
         private double tarifaDeAprovechamiento;
         private double total;
 
+        public int IdAseo { get { return idAseo; } set { this.idAseo = value; } }
         public double ToneladasPorSuscriptor { get { return toneladasPorSuscriptor; } set { this.toneladasPorSuscriptor = value; } }
         public double BarridoYLimpieza { get { return barridoYLimpieza; } set { this.barridoYLimpieza = value; } }
         public double LimpiezaUrbana { get { return limpiezaUrbana; } set { this.limpiezaUrbana = value; } }
