@@ -12,14 +12,16 @@ namespace aca1
         private Acueducto acueducto;
         private Alcantarillado alcantarillado;
         private Aseo aseo;
+        private DateTime fechaTomo;
         private DateTime fechaPagoOportuno;
 
-        public Factura (Usuario usuario, Acueducto acueducto, Alcantarillado alcantarillado, Aseo aseo, DateTime fechaPagoOportuno)
+        public Factura (Usuario usuario, Acueducto acueducto, Alcantarillado alcantarillado, Aseo aseo, DateTime fechaPagoOportuno, DateTime fechaTomo)
         {
             this.usuario = usuario;
             this.acueducto = acueducto;
             this.alcantarillado = alcantarillado;
             this.aseo = aseo;
+            this.fechaTomo = fechaTomo;
             this.fechaPagoOportuno = fechaPagoOportuno;
         }
     }

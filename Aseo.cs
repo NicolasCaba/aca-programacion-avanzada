@@ -17,14 +17,14 @@ namespace aca1
         private double tarifaDeAprovechamiento;
         private double total;
 
-        public double ToneladasPorSuscriptor { get; set; }
-        public double BarridoYLimpieza { get; set; }
-        public double Comercializacion { get; set; }
-        public double RecoleccionYTransporte { get; set; }
-        public double DisposicionFinal { get; set; }
-        public double TrataminetoDeLixiviados { get; set; }
-        public double TarifaDeAprovechamiento { get; set; }
-        public double Total { get; set; }
+        public double ToneladasPorSuscriptor { get { return toneladasPorSuscriptor; } set { this.toneladasPorSuscriptor = value; } }
+        public double BarridoYLimpieza { get { return barridoYLimpieza; } set { this.barridoYLimpieza = value; } }
+        public double Comercializacion { get { return comercializacion; } set { this.comercializacion = value; } }
+        public double RecoleccionYTransporte { get { return recoleccionYTransporte; } set { this.recoleccionYTransporte = value; } }
+        public double DisposicionFinal { get { return disposicionFinal; } set { this.disposicionFinal = value; } }
+        public double TrataminetoDeLixiviados { get { return trataminetoDeLixiviados; } set { this.trataminetoDeLixiviados = value; } }
+        public double TarifaDeAprovechamiento { get { return tarifaDeAprovechamiento; } set { this.tarifaDeAprovechamiento = value; } }
+        public double Total { get { return total; } set { this.total = value; } }
 
         public double calcular (string tipo, double tarifa, double porcentajeSubsidio, double porcentajeContribucion)
         {

@@ -133,6 +133,8 @@ namespace aca1
                 datosCuentaUsuario.Rows[row].Cells[20].Value = dr["Aprovechamiento"].ToString();
         
             }
+
+            dr.Close();
         }
 
         private void btnGenerarFactura_Click(object sender, EventArgs e)
