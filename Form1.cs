@@ -31,31 +31,6 @@ namespace aca1
             // String query para realizar las consultas
             StringBuilder sb = new StringBuilder();
 
-            // Consultas SQL para tener valores de cargos fijos
-            sb.Append("SELECT ");
-            /*****************************************/
-            sb.Append("Tarifas_acueducto.Cargo_fijo AS Cargo_fijo_Acueducto, ");
-            sb.Append("Tarifas_alcantarillado.Cargo_fijo AS Cargo_fijo_Alcantarillado ");
-            /*****************************************/
-            sb.Append("FROM Factura ");
-            /*****************************************/
-            sb.Append("LEFT JOIN Usuario ON Usuario.id = Factura.idUsuario ");
-            sb.Append("LEFT JOIN Estrato ON Estrato.id = Usuario.idEstrato ");
-            sb.Append("LEFT JOIN Tarifas_acueducto ON Estrato.id = Tarifas_acueducto.idEstrato ");
-            sb.Append("LEFT JOIN Tarifas_alcantarillado ON Estrato.id = Tarifas_alcantarillado.idEstrato;");
-
-            // Consulta para obtener valores de cargo fijo Acueducto y Alcantarillado
-            SqlDataReader drTarifas = conexion.DataReader(sb.ToString());
-
-            // Lectura de datos y guardado en variables
-            drTarifas.Read();
-            decimal cargoFijoAcueducto = Convert.ToDecimal( drTarifas["Cargo_fijo_Acueducto"].ToString() );
-            decimal cargoFijoAlcantarillado = Convert.ToDecimal( drTarifas["Cargo_fijo_Alcantarillado"].ToString() );
-
-            // Cierre sqlDataReader y limpieza string para nueva query
-            drTarifas.Close();
-            sb.Clear();
-
             // Query para rellenar la dataGridView
             sb.Append("SELECT ");
             /*****************************************/
@@ -89,7 +64,9 @@ namespace aca1
             sb.Append("Aseo.Tratamiento_lixiviados, ");
             sb.Append("Aseo.Aprovechamiento, ");
             sb.Append("Niveles_contribucion.Porcentaje AS Porcentaje_contribucion, ");
-            sb.Append("Niveles_subsidio.Porcentaje AS Porcentaje_subsidio ");
+            sb.Append("Niveles_subsidio.Porcentaje AS Porcentaje_subsidio, ");
+            sb.Append("Tarifas_acueducto.Cargo_fijo AS Cargo_fijo_Acueducto, ");
+            sb.Append("Tarifas_alcantarillado.Cargo_fijo AS Cargo_fijo_Alcantarillado ");
             /*****************************************/
             sb.Append("FROM Factura ");
             /*****************************************/
@@ -99,7 +76,9 @@ namespace aca1
             sb.Append("LEFT JOIN Aseo ON Aseo.id = Factura.idAseo ");
             sb.Append("LEFT JOIN Estrato ON Estrato.id = Usuario.idEstrato ");
             sb.Append("LEFT JOIN Niveles_subsidio ON Estrato.id = Niveles_subsidio.idEstrato ");
-            sb.Append("LEFT JOIN Niveles_contribucion ON Estrato.id = Niveles_contribucion.idEstrato;");
+            sb.Append("LEFT JOIN Niveles_contribucion ON Estrato.id = Niveles_contribucion.idEstrato ");
+            sb.Append("LEFT JOIN Tarifas_acueducto ON Estrato.id = Tarifas_acueducto.idEstrato ");
+            sb.Append("LEFT JOIN Tarifas_alcantarillado ON Estrato.id = Tarifas_alcantarillado.idEstrato;");
 
             // Consulta para rellenar la tabla
             SqlDataReader dr = conexion.DataReader(sb.ToString());
@@ -115,11 +94,11 @@ namespace aca1
                 datosCuentaUsuario.Rows[row].Cells[2].Value = dr["Estrato"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[3].Value = dr["Clase_uso"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[4].Value = dr["Direccion"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[5].Value = cargoFijoAcueducto;
+                datosCuentaUsuario.Rows[row].Cells[5].Value = dr["Cargo_fijo_Acueducto"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[6].Value = dr["Consumo_basico_Acueducto"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[7].Value = dr["Consumo_complementario_Acueducto"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[8].Value = dr["Consumo_suntuario_Acueducto"].ToString();
-                datosCuentaUsuario.Rows[row].Cells[9].Value = cargoFijoAlcantarillado;
+                datosCuentaUsuario.Rows[row].Cells[9].Value = dr["Cargo_fijo_Alcantarillado"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[10].Value = dr["Consumo_basico_Alcantarillado"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[11].Value = dr["Consumo_complementario_Alcantarillado"].ToString();
                 datosCuentaUsuario.Rows[row].Cells[12].Value = dr["Consumo_suntuario_Alcantarillado"].ToString();

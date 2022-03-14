@@ -223,11 +223,11 @@ namespace aca1
             sb.Clear();
 
             string caracter;
-            if (this.usuario.Estrato < 3)
+            if (this.usuario.Estrato < 4)
             {
                 caracter = "-";
             }
-            else if (this.usuario.Estrato > 3)
+            else if (this.usuario.Estrato > 4)
             {
                 caracter = "+";
             }
