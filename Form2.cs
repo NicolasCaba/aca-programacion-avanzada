@@ -24,6 +24,7 @@ namespace aca1
         TarifasAcueducto tarifasAcueducto;
         TarifasAlcantarillado tarifasAlcantarillado;
         TarifasAseo tarifasAseo;
+        double totalAPagar;
 
         public FormFactura(int idFactura)
         {
@@ -221,6 +222,20 @@ namespace aca1
             dr.Close();
             sb.Clear();
 
+            string caracter;
+            if (this.usuario.Estrato < 3)
+            {
+                caracter = "-";
+            }
+            else if (this.usuario.Estrato > 3)
+            {
+                caracter = "+";
+            }
+            else
+            {
+                caracter = "~";
+            }
+
             // Set labels info Usuario
             this.labelIdUsuario.Text = Convert.ToString(this.usuario.IdUsuario);
             this.labelUsuarioNombre.Text = this.usuario.Nombre;
@@ -258,23 +273,22 @@ namespace aca1
             this.labelAcueductoVTConsumoComplementario.Text = Convert.ToString(valorTotalConsumoComplementarioAceuducto);
             this.labelAcueductoVTConsumoSuntuario.Text = Convert.ToString(valorTotalConsumoSuntuarioAceuducto);
             /*****************Subsidio Contribucion*****************************/
-            string caracter;
-            if(this.usuario.Estrato < 3)
-            {
-                caracter = "-";
-            } else if (this.usuario.Estrato > 3)
-            {
-                caracter = "+";
-            } else
-            {
-                caracter = "~";
-            }
-
             this.labelAcueductoSCCargoFijo.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalCargoFijoAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
             this.labelAcueductoSCConsumoBasico.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalConsumoBasicoAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
             this.labelAcueductoSCConsumoComplementario.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalConsumoComplementarioAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
             this.labelAcueductoSCConsumoSuntuario.Text = $"{caracter}{this.acueducto.calcularValorPorcentaje(valorTotalConsumoSuntuarioAceuducto, porcentajeSubsidio, porcentajeContribucion)}";
-             
+            /*****************Subtotal*****************************/
+            double subtotalCargoFijoAcueducto = this.acueducto.calcularSubtotal(valorTotalCargoFijoAceuducto, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalConsumoBasicoAcueducto = this.acueducto.calcularSubtotal(valorTotalConsumoBasicoAceuducto, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalConsumoComplementarioAcueducto = this.acueducto.calcularSubtotal(valorTotalConsumoComplementarioAceuducto, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalConsumoSuntuarioAcueducto = this.acueducto.calcularSubtotal(valorTotalConsumoSuntuarioAceuducto, porcentajeSubsidio, porcentajeContribucion);
+            this.labelAcueductoTotalCargoFijo.Text = Convert.ToString(subtotalCargoFijoAcueducto);
+            this.labelAcueductoTotalConsumoBasico.Text = Convert.ToString(subtotalConsumoBasicoAcueducto);
+            this.labelAcueductoTotalConsumoComplementario.Text = Convert.ToString(subtotalConsumoComplementarioAcueducto);
+            this.labelAcueductoTotalConsumoSuntuario.Text = Convert.ToString(subtotalConsumoSuntuarioAcueducto);
+            this.acueducto.Total = subtotalCargoFijoAcueducto + subtotalConsumoBasicoAcueducto + subtotalConsumoComplementarioAcueducto + subtotalConsumoSuntuarioAcueducto;
+            this.labelAcueductoTotalSubtotal.Text = Convert.ToString(this.acueducto.Total);
+
 
             // Set labels info Alcantarillado
             /*****************Cantidad*****************************/
@@ -302,7 +316,17 @@ namespace aca1
             this.labelAlcantarilladoSCConsumoBasico.Text = $"{caracter}{this.alcantarillado.calcularValorPorcentaje(valorTotalConsumoBasicoAlcantarillado, porcentajeSubsidio, porcentajeContribucion)}";
             this.labelAlcantarilladoSCConsumoComplementario.Text = $"{caracter}{this.alcantarillado.calcularValorPorcentaje(valorTotalConsumoComplementarioAlcantarillado, porcentajeSubsidio, porcentajeContribucion)}";
             this.labelAlcantarilladoSCConsumoSuntuario.Text = $"{caracter}{this.alcantarillado.calcularValorPorcentaje(valorTotalConsumoSuntuarioAlcantarillado, porcentajeSubsidio, porcentajeContribucion)}";
-
+            /*****************Subtotal*****************************/
+            double subtotalCargoFijoAlcantarillado = this.alcantarillado.calcularSubtotal(valorTotalCargoFijoAlcantarillado, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalConsumoBasicoAlcantarillado = this.alcantarillado.calcularSubtotal(valorTotalConsumoBasicoAlcantarillado, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalConsumoComplementarioAlcantarillado = this.alcantarillado.calcularSubtotal(valorTotalConsumoComplementarioAlcantarillado, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalConsumoSuntuarioAlcantarillado = this.alcantarillado.calcularSubtotal(valorTotalConsumoSuntuarioAlcantarillado, porcentajeSubsidio, porcentajeContribucion);
+            this.labelAlcantarilladoTotalCargoFijo.Text = Convert.ToString(subtotalCargoFijoAlcantarillado);
+            this.labelAlcantarilladoTotalConsumoBasico.Text = Convert.ToString(subtotalConsumoBasicoAlcantarillado);
+            this.labelAlcantarilladoTotalConsumoComplementario.Text = Convert.ToString(subtotalConsumoComplementarioAlcantarillado);
+            this.labelAlcantarilladoTotalConsumoSuntuario.Text = Convert.ToString(subtotalConsumoSuntuarioAlcantarillado);
+            this.alcantarillado.Total = subtotalCargoFijoAlcantarillado + subtotalConsumoBasicoAlcantarillado + subtotalConsumoComplementarioAlcantarillado + subtotalConsumoSuntuarioAlcantarillado;
+            this.labelAlcantarilladoTotalSubtotal.Text = Convert.ToString(this.alcantarillado.Total);
 
 
             // Set labels info Aseo
@@ -351,7 +375,29 @@ namespace aca1
             this.labelAseoSCDisposicionFinal.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalDisposicionFinal, porcentajeSubsidio, porcentajeContribucion)}";
             this.labelAseoSCTratamientoLixiviados.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalTratamientoLixiviados, porcentajeSubsidio, porcentajeContribucion)}";
             this.labelAseoSCAprovechamiento.Text = $"{caracter}{this.aseo.calcularValorPorcentaje(valorTotalAprovechamiento, porcentajeSubsidio, porcentajeContribucion)}";
+            /*****************Subtotal*****************************/
+            double subtotalToneladasPorSuscriptor = this.aseo.calcularSubtotal(valorTotalToneladasPorSuscriptor, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalBarridoYLimpieza = this.aseo.calcularSubtotal(valorTotalBarridoYLimpieza, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalLimpiezaUrbana = this.aseo.calcularSubtotal(valorTotalLimpiezaUrbana, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalComercializacion = this.aseo.calcularSubtotal(valorTotalComercializacion, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalRecoleccionYTransporte = this.aseo.calcularSubtotal(valorTotalRecoleccionYTransporte, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalDisposicionFinal = this.aseo.calcularSubtotal(valorTotalDisposicionFinal, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalTratamientoLixiviados = this.aseo.calcularSubtotal(valorTotalTratamientoLixiviados, porcentajeSubsidio, porcentajeContribucion);
+            double subtotalAprovechamiento = this.aseo.calcularSubtotal(valorTotalAprovechamiento, porcentajeSubsidio, porcentajeContribucion);
+            this.labelAseoTotalToneladasPorSuscriptor.Text = Convert.ToString(subtotalToneladasPorSuscriptor);
+            this.labelAseoTotalBarridoYLimpieza.Text = Convert.ToString(subtotalBarridoYLimpieza);
+            this.labelAseoTotalLimpiezaUrbana.Text = Convert.ToString(subtotalLimpiezaUrbana);
+            this.labelAseoTotalComercializacion.Text = Convert.ToString(subtotalComercializacion);
+            this.labelAseoTotalRecoleccionYTransporte.Text = Convert.ToString(subtotalRecoleccionYTransporte);
+            this.labelAseoTotalDisposicionFinal.Text = Convert.ToString(subtotalDisposicionFinal);
+            this.labelAseoTotalTratamientoLixiviados.Text = Convert.ToString(subtotalTratamientoLixiviados);
+            this.labelAseoTotalAprovechamiento.Text = Convert.ToString(subtotalAprovechamiento);
+            this.aseo.Total = subtotalToneladasPorSuscriptor + subtotalBarridoYLimpieza + subtotalLimpiezaUrbana + subtotalComercializacion + subtotalRecoleccionYTransporte + subtotalDisposicionFinal + subtotalTratamientoLixiviados + subtotalAprovechamiento;
+            this.labelAseoTotalSubtotal.Text = Convert.ToString(this.aseo.Total);
 
+            // Total a pagar
+            this.totalAPagar = this.acueducto.Total + this.alcantarillado.Total + this.aseo.Total;
+            this.labelFacturaTotalAPagar.Text = $"{this.totalAPagar} $";
 
         }
 

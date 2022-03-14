@@ -44,6 +44,15 @@ namespace aca1
             }
         }
 
+        public double calcularSubtotal(double valor, int porcentajesubsidio, int porcentajecontribucion)
+        {
+            double valorSubsidio = (valor * porcentajesubsidio) / 100;
+            double valorContribucion = (valor * porcentajecontribucion) / 100;
+            double subtotal = valor - valorSubsidio + valorContribucion;
+
+            return subtotal;
+        }
+
         public double calcularCargoFijo ( double porcentajesubsidio, double porcentajecontribucion)
         {
             double valorSubsidio = (this.cargoFijo * porcentajesubsidio) / 100;
